@@ -443,7 +443,7 @@ a {
   text-transform: uppercase;
   text-align: center;
   color: var(--black);
-  margin-bottom: 72px;
+  margin-bottom: 52px;
 }
 
 .fest-nom {
@@ -546,6 +546,114 @@ a {
   line-height: 90%;
   letter-spacing: -0.02em;
   color: var(--black);
+}
+
+/* Criteria dance  */
+
+.criteria {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-image: url(/images/mobile/back-blur-mob.jpg);
+background-size: cover;
+background-position: center;
+padding-top: 32px;
+padding-bottom: 52px;
+}
+
+.crt-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.27;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 32px;
+}
+
+.crt-title span {
+  color: var(--green);
+}
+
+.crt-img img {
+  border-radius: 15px;
+  width: 335px;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+.crt-inf {
+  border-radius: 15px;
+  width: 335px;
+  height: 566px;
+  background: #fbfada;
+  padding: 32px 10px;
+}
+
+.crt-info-title {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.41;
+  text-align: center;
+  color: var(--green);
+  margin-bottom: 24px;
+}
+
+.crt-info-list {
+  width: 315px
+  padding: 0;
+}
+
+.crt-info-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--black);
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 10px;
+}
+
+
+.crt-info-list  li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 24px;
+  border-radius: 35%;
+  display: inline-block;
+}
+
+.item1::before {
+  background-color: #262629;
+}
+    
+  .item2::before {
+    background-color: #424243;
+}
+    
+  .item3::before {
+    background-color: #81705c;
+}
+    
+  .item4::before {
+    background-color: #a88758;
+}
+
+  .item5::before {
+    background-color: #cda155;
+}
+  .item6::before {
+    background-color: #fdd86b;
+}
+  .item7::before {
+    background-color: #fff192;
 }
 
 @media screen and (min-width: 768px) {

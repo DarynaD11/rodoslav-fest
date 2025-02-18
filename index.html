@@ -1,529 +1,747 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="./images/icons.svg#icon-logo" class="favicon">
-    <title>Rodoslav Fest</title>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
+      rel="icon"
+      type="image/svg+xml"
+      href="./images/icons.svg#icon-logo"
+      class="favicon"
+    />
+    <title>Rodoslav Fest</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header-section">
-        <div class="container header-container">
-            <nav class="header-nav"><a href="./index.html" class="logo header-logo-link">
-                    <svg class="logo-fest" width="80" height="80">
-                        <use href="./images/icons.svg#icon-logo"></use>
-                    </svg>
-                    <span class="logo-title">Rodoslav Fest</span>
-                </a>
-                <ul class="nav-header-link">
-                    <li class="nav-item"><a href="./index.html" class="nav-link current">Головна</a></li>
-                    <li><a href="nav-item" class="nav-link">Про фестиваль</a></li>
-                    <li><a href="nav-item" class="nav-link">Контакти</a></li>
-                    <li><a href="nav-item" class="nav-link"><svg class="icon-inst" width="24" height="24">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg></a></li>
-                </ul>
-            </nav>
-            <button class="mobile-menu-btn" type="button" data-menu-open>
-                <svg class="icon-menu" width="24" height="24">
-                    <use href="./images/icons.svg#icon-menu"></use>
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a href="./index.html" class="logo header-logo-link">
+            <svg class="logo-fest" width="80" height="80">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+            <span class="logo-title">Rodoslav Fest</span>
+          </a>
+          <ul class="nav-header-link">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link current">Головна</a>
+            </li>
+            <li><a href="nav-item" class="nav-link">Про фестиваль</a></li>
+            <li><a href="nav-item" class="nav-link">Контакти</a></li>
+            <li>
+              <a href="nav-item" class="nav-link"
+                ><svg class="icon-inst" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-btn" type="button" data-menu-open>
+          <svg class="icon-menu" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" type="button" data-menu-close>
+            <svg class="menu-btn-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <ul class="menu-nav-link">
+            <li class="menu-nav-item">
+              <a href="./index.html" class="menu-nav-link menu-current"
+                >Головна</a
+              >
+            </li>
+            <li><a href="" class="menu-nav-link">Про фестиваль</a></li>
+            <li><a href="" class="menu-nav-link">Контакти</a></li>
+          </ul>
+          <ul class="social-link">
+            <li class="social-item">
+              <a class="social-item-link" href="https://www.instagram.com">
+                <svg class="card-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
-            </button>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-item-link" href="https://www.facebook.com">
+                <svg class="card-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="mobile-menu" data-menu>
-            <div class="container mobile-menu-container">
-                <button class="mobile-menu-close" type="button" data-menu-close>
-                    <svg class="menu-btn-icon" width="8" height="8">
-                        <use href="./images/icons.svg#icon-cross"></use>
-                    </svg>
-                </button>
-                <ul class="menu-nav-link">
-                    <li class="menu-nav-item"><a href="./index.html" class="menu-nav-link menu-current">Головна</a></li>
-                    <li><a href="" class="menu-nav-link">Про фестиваль</a></li>
-                    <li><a href="" class="menu-nav-link">Контакти</a></li>
-                </ul>
-                <ul class="social-link">
-                    <li class="social-item">
-                        <a class="social-item-link" href="https://www.instagram.com">
-                            <svg class="card-social-icon" width="16" height="16">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a class="social-item-link" href="https://www.facebook.com">
-                            <svg class="card-social-icon" width="16" height="16">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+      </div>
     </header>
     <main>
-        <section class="first-section">
-            <div class="container first-section-cont">
-                <a class="hero-loro-link" href="https://uni-sport.edu.ua/">
-                    <img src="./images/desktop/nupesu.png" alt="nupesu-logo" class="hero-nupesu" width="65" height="75">
-                    <p class="nupesu-logo-text">Національний університет фізичного виховання і спорту України</p>
-                </a>
-                <h1 class="first-section-title">Всеукраїнський фестиваль-конкурс хореографічного мистецтва</h1>
-                <div class="hero-div">
-                    <button type="button" class="first-section-btn-reg">Зареєструватись</button>
-                    <a href="#made" class="first-section-btn-ab">Про фестиваль</a>
-                    <p class="hero-data">26 квітня 2025 року</p>
+      <section class="first-section">
+        <div class="container first-section-cont">
+          <a class="hero-loro-link" href="https://uni-sport.edu.ua/">
+            <img
+              src="./images/desktop/nupesu.png"
+              alt="nupesu-logo"
+              class="hero-nupesu"
+              width="65"
+              height="75"
+            />
+            <p class="nupesu-logo-text">
+              Національний університет фізичного виховання і спорту України
+            </p>
+          </a>
+          <h1 class="first-section-title">
+            Всеукраїнський фестиваль-конкурс хореографічного мистецтва
+          </h1>
+          <div class="hero-div">
+            <button type="button" class="first-section-btn-reg">
+              Зареєструватись
+            </button>
+            <a href="#made" class="first-section-btn-ab">Про фестиваль</a>
+            <p class="hero-data">26 квітня 2025 року</p>
+          </div>
+        </div>
+      </section>
+      <section class="section-two">
+        <div class="container">
+          <ul class="second-section">
+            <li class="second-list">
+              <div class="div-cont">
+                <div class="box-icon">
+                  <svg class="icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-group"></use>
+                  </svg>
                 </div>
-
-            </div>
-        </section>
-        <section class="section-two">
-            <div class="container">
-                <ul class="second-section">
-                    <li class="second-list">
-                        <div class="div-cont">
-                            <div class="box-icon">
-                                <svg class="icon" width="32" height="32">
-                                    <use href="./images/icons.svg#icon-group"></use>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="second-title">Категорії Фестивалю-конкурсу:
-                                </h3>
-                                <ul class="second-text">
-                                    <li>Соло;</li>
-                                    <li>Дует;</li>
-                                    <li>Мала група (до 8 учасників);</li>
-                                    <li>Велика група (від 8 до 16 учасників).</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <hr class="my-line">
-                    </li>
-                    <li class="second-list">
-                        <div class="div-cont">
-                            <div class="box-icon">
-                                <svg class="icon" width="32" height="32">
-                                    <use href="./images/icons.svg#icon-add"></use>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="second-title">Вікові категорії Фестивалю-конкурсу:
-                                </h3>
-                                <ul class="second-text">
-                                    <li>Дебют (для категорії малюки та діти);</li>
-                                    <li>Малюки до 8 років;</li>
-                                    <li>Діти від 8 до 12 років;</li>
-                                    <li>Юніори 12-15 років;</li>
-                                    <li>Молодь від 15 до 18 років;</li>
-                                    <li>Дорослі від 18 до 22 років.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <hr class="my-line">
-                    </li>
-                    <li class="second-list">
-                        <div class="div-cont">
-                            <div class="box-icon">
-                                <svg class="icon" width="32" height="32">
-                                    <use href="./images/icons.svg#icon-music"></use>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="second-title">Тривалість хореографічного номеру:
-                                </h3>
-                                <ul class="second-text">
-                                    <li>Дует – тривалість максимум до 2.30 хвилин;</li>
-                                    <li>Мала група – тривалість максимум до 3.30 хвилин;</li>
-                                    <li>Велика група – тривалість максимум до 5 хвилин.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="dance-style">
-            <div class="container">
-                <h2 class="portfolio">Фестиваль-конкурс проводиться за наступними <span
-                        class="fest-nom">номінаціями</span></h2>
-                <ul class="portfolio-container">
-                    <li>
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="./images/mobile/folk-mob.jpg" alt="Folk dance" width="270" height="270">
-                                    <p class="card-text">Народна хореографія</p>
-                                </div>
-                                <div class="flip-card-back">
-                                    <div class="overlay-content">
-                                        <span class="title-overlay">Народна хореографія</span>
-                                        <p class="text-overlay">Український народний та народно-сценічний танець,
-                                            народний
-                                            та народно-сценічний танець інших національностей, стилізація народного
-                                            танцю.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="./images/mobile/clasik-dance-mob.jpg" alt="Clasyk dance" width="270"
-                                        height="270">
-                                    <p class="card-text">Класична хореографія</p>
-                                </div>
-                                <div class="flip-card-back">
-                                    <div class="overlay-content">
-                                        <span class="title-overlay">Класична хореографія</span>
-                                        <p class="text-overlay">Фрагменти та варіації з класичних балетів, постановки на
-                                            основі елементів
-                                            класичного танцю.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="./images/mobile/modern-mob.jpg" alt="Modern dance" width="270"
-                                        height="270">
-                                    <p class="card-text">Сучасна хореографія</p>
-                                </div>
-                                <div class="flip-card-back">
-                                    <div class="overlay-content">
-                                        <span class="title-overlay">Сучасна хореографія</span>
-                                        <p class="text-overlay">Джаз, модерн, contemporary, фольк-модерн, фольк-джаз та
-                                            ін.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="./images/mobile/street-mob.jpg" alt="Street dance" width="270"
-                                        height="270">
-                                    <p class="card-text">Вуличні стилі</p>
-                                </div>
-                                <div class="flip-card-back">
-                                    <div class="overlay-content">
-                                        <span class="title-overlay">Вуличні стилі</span>
-                                        <p class="text-overlay">Hip-hop, house, breaking, locking, vogue, dancehall
-                                            тощо.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="section-four hidden">
-            <div class="container">
-                <h2 class="portfolio">Our Portfolio</h2>
-                <ul class="portfolio-container">
-                    <li class="portfolio-card">
-                        <div class="portfolio-card-img">
-                            <picture>
-                                <source media="(min-width: 1158px)"
-                                    srcset="./images/desktop/bank-desk@1x-min.jpg 1x, ./images/desktop/bank-desk@2x-min.jpg 2x">
-                                <source media="(min-width: 768px)"
-                                    srcset="./images/tablet/bank-tab@1x-min.jpg 1x, ./images/tablet/bank-tab@2x-min.jpg 2x">
-                                <source media="(max-width: 767px)"
-                                    srcset="./images/mobile/bank-mob@1x-min.jpg 1x, ./images/mobile/bank-mob@2x-min.jpg 2x">
-                                <img src="./images/desktop/bank-desk@1x-min.jpg" alt="banking-app" width="360"
-                                    height="300">
-                            </picture>
-                            <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App
-                                · Calorie Tracker App
-                                · Exotic Fruit Ecommerce App ·
-                                Cloud Storage App</p>
-                        </div>
-                        <div class="portfolio-card-two">
-                            <h3 class="portfolio-card-title">
-                                Banking App
-                            </h3>
-                            <p class="portfolio-card-text">
-                                App
-                            </p>
-                        </div>
-                    </li>
-                    <li class="portfolio-card">
-                        <div class="portfolio-card-img">
-                            <picture>
-                                <source media="(min-width: 1158px)"
-                                    srcset="./images/desktop/cash-desk@1x-min.jpg 1x, ./images/desktop/cash-desk@2x-min.jpg 2x">
-                                <source media="(min-width: 768px)"
-                                    srcset="./images/tablet/cash-tab@1x-min.jpg 1x, ./images/tablet/cash-tab@2x-min.jpg 2x">
-                                <source media="(max-width: 767px)"
-                                    srcset="./images/mobile/cashless-mob@1x-min.jpg 1x, ./images/mobile/cashless-mob@2x-min.jpg 2x">
-                                <img src="./images/desktop/cash-desk@1x-min.jpg" alt="cashless-payment" width="360"
-                                    height="300">
-                            </picture>
-                            <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App
-                                · Calorie Tracker App
-                                · Exotic Fruit Ecommerce App ·
-                                Cloud Storage App</p>
-                        </div>
-                        <div class="portfolio-card-two">
-                            <h3 class="portfolio-card-title">
-                                Cashless Payment
-                            </h3>
-                            <p class="portfolio-card-text">Marketing
-                            </p>
-                        </div>
-                    </li>
-                    <li class="portfolio-card">
-                        <div class="portfolio-card-img">
-                            <picture>
-                                <source media="(min-width: 1158px)"
-                                    srcset="./images/desktop/meditation-desk@1x-min.jpg 1x, ./images/desktop/meditation-desk@2x-min.jpg 2x">
-                                <source media="(min-width: 768px)"
-                                    srcset="./images/tablet/meditation-tab@1x-min.jpg 1x, ./images/tablet/meditation-tab@2x-min.jpg 2x">
-                                <source media="(max-width: 767px)"
-                                    srcset="./images/mobile/meditation-mob@1x-min.jpg 1x, ./images/mobile/meditation-mob@2x-min.jpg 2x">
-                                <img src="./images/desktop/meditation-desk@1x-min.jpg" alt="meditation-app" width="360"
-                                    height="300">
-                            </picture>
-                            <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App
-                                · Calorie Tracker App
-                                · Exotic Fruit Ecommerce App ·
-                                Cloud Storage App</p>
-                        </div>
-                        <div class="portfolio-card-two">
-                            <h3 class="portfolio-card-title">
-                                Meditation App
-                            </h3>
-                            <p class="portfolio-card-text">
-                                App
-                            </p>
-                        </div>
-                    </li>
-                    <li class="portfolio-card">
-                        <div class="portfolio-card-img">
-                            <picture>
-                                <source media="(min-width: 1158px)"
-                                    srcset="./images/desktop/taxi-desk@1x-min.jpg 1x, ./images/desktop/taxi-desk@2x-min.jpg 2x">
-                                <source media="(min-width: 768px)"
-                                    srcset="./images/tablet/taxi-tab@1x-min.jpg 1x, ./images/tablet/taxi-tab@2x-min.jpg 2x">
-                                <source media="(max-width: 767px)"
-                                    srcset="./images/mobile/taxi-mob@1x-min.jpg 1x, ./images/mobile/taxi-mob@2x-min.jpg 2x">
-                                <img src="./images/desktop/taxi-desk@1x-min.jpg" alt="taxi-service" width="360"
-                                    height="300">
-                            </picture>
-                            <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App
-                                · Calorie Tracker App
-                                · Exotic Fruit Ecommerce App ·
-                                Cloud Storage App</p>
-                        </div>
-                        <div class="portfolio-card-two">
-                            <h3 class="portfolio-card-title">
-                                Taxi Service
-                            </h3>
-                            <p class="portfolio-card-text">
-                                Marketing
-                            </p>
-                        </div>
-                    </li>
-                    <li class="portfolio-card">
-                        <div class="portfolio-card-img">
-                            <picture>
-                                <source media="(min-width: 1158px)"
-                                    srcset="./images/desktop/screen-desk@1x-min.jpg 1x, ./images/desktop/screen-desk@2x-min.jpg 2x">
-                                <source media="(min-width: 768px)"
-                                    srcset="./images/tablet/screen-tab@1x-min.jpg 1x, ./images/tablet/screen-tab@2x-min.jpg 2x">
-                                <source media="(max-width: 767px)"
-                                    srcset="./images/mobile/screen-mob@1x-min.jpg 1x, ./images/mobile/screen-mob@2x-min.jpg 2x">
-                                <img src="./images/desktop/screen-desk@1x-min.jpg" alt="screen-illustrations"
-                                    width="360" height="300">
-                            </picture>
-                            <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App
-                                · Calorie Tracker App
-                                · Exotic Fruit Ecommerce App ·
-                                Cloud Storage App</p>
-                        </div>
-                        <div class="portfolio-card-two">
-                            <h3 class="portfolio-card-title">
-                                Screen Illustrations
-                            </h3>
-                            <p class="portfolio-card-text">
-                                Design
-                            </p>
-                        </div>
-                    </li>
-                    <li class="portfolio-card">
-                        <div class="portfolio-card-img">
-                            <picture>
-                                <source media="(min-width: 1158px)"
-                                    srcset="./images/desktop/online-desk@1x-min.jpg 1x, ./images/desktop/online-desk@2x-min.jpg 2x">
-                                <source media="(min-width: 768px)"
-                                    srcset="./images/tablet/online-tab@1x-min.jpg 1x, ./images/tablet/online-tab@2x-min.jpg 2x">
-                                <source media="(max-width: 767px)"
-                                    srcset="./images/mobile/online-mob@1x-min.jpg 1x, ./images/mobile/online-mob@2x-min.jpg 2x">
-                                <img src="./images/desktop/online-desk@1x-min.jpg" alt="online-courses" width="360"
-                                    height="300">
-                            </picture>
-                            <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App
-                                · Calorie Tracker App
-                                · Exotic Fruit Ecommerce App ·
-                                Cloud Storage App</p>
-                        </div>
-                        <div class="portfolio-card-two">
-                            <h3 class="portfolio-card-title">
-                                Online Courses
-                            </h3>
-                            <p class="portfolio-card-text">
-                                Marketing
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                <div>
+                  <h3 class="second-title">Категорії Фестивалю-конкурсу:</h3>
+                  <ul class="second-text">
+                    <li>Соло;</li>
+                    <li>Дует;</li>
+                    <li>Мала група (до 8 учасників);</li>
+                    <li>Велика група (від 8 до 16 учасників).</li>
+                  </ul>
+                </div>
+              </div>
+              <hr class="my-line" />
+            </li>
+            <li class="second-list">
+              <div class="div-cont">
+                <div class="box-icon">
+                  <svg class="icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-add"></use>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="second-title">
+                    Вікові категорії Фестивалю-конкурсу:
+                  </h3>
+                  <ul class="second-text">
+                    <li>Дебют (для категорії малюки та діти);</li>
+                    <li>Малюки до 8 років;</li>
+                    <li>Діти від 8 до 12 років;</li>
+                    <li>Юніори 12-15 років;</li>
+                    <li>Молодь від 15 до 18 років;</li>
+                    <li>Дорослі від 18 до 22 років.</li>
+                  </ul>
+                </div>
+              </div>
+              <hr class="my-line" />
+            </li>
+            <li class="second-list">
+              <div class="div-cont">
+                <div class="box-icon">
+                  <svg class="icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-music"></use>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="second-title">
+                    Тривалість хореографічного номеру:
+                  </h3>
+                  <ul class="second-text">
+                    <li>Дует – тривалість максимум до 2.30 хвилин;</li>
+                    <li>Мала група – тривалість максимум до 3.30 хвилин;</li>
+                    <li>Велика група – тривалість максимум до 5 хвилин.</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="dance-style">
+        <div class="container">
+          <h2 class="portfolio">
+            Фестиваль-конкурс проводиться за наступними
+            <span class="fest-nom">номінаціями</span>
+          </h2>
+          <ul class="portfolio-container">
+            <li>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="./images/mobile/folk-mob.jpg"
+                      alt="Folk dance"
+                      width="270"
+                      height="270"
+                    />
+                    <p class="card-text">Народна хореографія</p>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="overlay-content">
+                      <span class="title-overlay">Народна хореографія</span>
+                      <p class="text-overlay">
+                        Український народний та народно-сценічний танець,
+                        народний та народно-сценічний танець інших
+                        національностей, стилізація народного танцю.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="./images/mobile/clasik-dance-mob.jpg"
+                      alt="Clasyk dance"
+                      width="270"
+                      height="270"
+                    />
+                    <p class="card-text">Класична хореографія</p>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="overlay-content">
+                      <span class="title-overlay">Класична хореографія</span>
+                      <p class="text-overlay">
+                        Фрагменти та варіації з класичних балетів, постановки на
+                        основі елементів класичного танцю.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="./images/mobile/modern-mob.jpg"
+                      alt="Modern dance"
+                      width="270"
+                      height="270"
+                    />
+                    <p class="card-text">Сучасна хореографія</p>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="overlay-content">
+                      <span class="title-overlay">Сучасна хореографія</span>
+                      <p class="text-overlay">
+                        Джаз, модерн, contemporary, фольк-модерн, фольк-джаз та
+                        ін.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="./images/mobile/street-mob.jpg"
+                      alt="Street dance"
+                      width="270"
+                      height="270"
+                    />
+                    <p class="card-text">Вуличні стилі</p>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="overlay-content">
+                      <span class="title-overlay">Вуличні стилі</span>
+                      <p class="text-overlay">
+                        Hip-hop, house, breaking, locking, vogue, dancehall
+                        тощо.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="criteria">
+        <h3 class="crt-title">Критерії <span>оцінювання</span> виконавців</h3>
+        <div class="crt-img">
+          <img src="./images/mobile/criteria-mob.jpg" alt="Ballet" />
+        </div>
+        <div class="crt-inf">
+          <h4 class="crt-info-title">
+            Кожна хореографічна постановка оцінюється за такими критеріями у
+            10-бальній шкалі:
+          </h4>
+          <ul class="crt-info-list">
+            <li class="crt-info-text item1">
+              Композиційне вирішення постановки (хореографічна драматургія,
+              сюжет номеру);
+            </li>
+            <li class="crt-info-text item2">
+              Музичний супровід (відповідність музичного супроводу задуму
+              постановки та віку дітей);
+            </li>
+            <li class="crt-info-text item3">
+              Художньо-виконавський рівень (техніка та чистота виконання,
+              чіткість хореографічних малюнків, динаміка виконання);
+            </li>
+            <li class="crt-info-text item4">
+              Музикальність виконання (ритмічність, музикальність, музичні
+              акценти, обігравання музики);
+            </li>
+            <li class="crt-info-text item5">
+              Акторська виразність (виразність, емоційність, атмосфера танцю);
+            </li>
+            <li class="crt-info-text item6">Сценічна культура;</li>
+            <li class="crt-info-text item7">
+              Оригінальність сценічного твору та відповідність віковим
+              особливостям виконавців.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-four hidden">
+        <div class="container">
+          <h2 class="portfolio">Our Portfolio</h2>
+          <ul class="portfolio-container">
+            <li class="portfolio-card">
+              <div class="portfolio-card-img">
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/desktop/bank-desk@1x-min.jpg 1x,
+                      ./images/desktop/bank-desk@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/tablet/bank-tab@1x-min.jpg 1x,
+                      ./images/tablet/bank-tab@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobile/bank-mob@1x-min.jpg 1x,
+                      ./images/mobile/bank-mob@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/desktop/bank-desk@1x-min.jpg"
+                    alt="banking-app"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+                <p class="text-overlay">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="portfolio-card-two">
+                <h3 class="portfolio-card-title">Banking App</h3>
+                <p class="portfolio-card-text">App</p>
+              </div>
+            </li>
+            <li class="portfolio-card">
+              <div class="portfolio-card-img">
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/desktop/cash-desk@1x-min.jpg 1x,
+                      ./images/desktop/cash-desk@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/tablet/cash-tab@1x-min.jpg 1x,
+                      ./images/tablet/cash-tab@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobile/cashless-mob@1x-min.jpg 1x,
+                      ./images/mobile/cashless-mob@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/desktop/cash-desk@1x-min.jpg"
+                    alt="cashless-payment"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+                <p class="text-overlay">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="portfolio-card-two">
+                <h3 class="portfolio-card-title">Cashless Payment</h3>
+                <p class="portfolio-card-text">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio-card">
+              <div class="portfolio-card-img">
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/desktop/meditation-desk@1x-min.jpg 1x,
+                      ./images/desktop/meditation-desk@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/tablet/meditation-tab@1x-min.jpg 1x,
+                      ./images/tablet/meditation-tab@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobile/meditation-mob@1x-min.jpg 1x,
+                      ./images/mobile/meditation-mob@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/desktop/meditation-desk@1x-min.jpg"
+                    alt="meditation-app"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+                <p class="text-overlay">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="portfolio-card-two">
+                <h3 class="portfolio-card-title">Meditation App</h3>
+                <p class="portfolio-card-text">App</p>
+              </div>
+            </li>
+            <li class="portfolio-card">
+              <div class="portfolio-card-img">
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/desktop/taxi-desk@1x-min.jpg 1x,
+                      ./images/desktop/taxi-desk@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/tablet/taxi-tab@1x-min.jpg 1x,
+                      ./images/tablet/taxi-tab@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobile/taxi-mob@1x-min.jpg 1x,
+                      ./images/mobile/taxi-mob@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/desktop/taxi-desk@1x-min.jpg"
+                    alt="taxi-service"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+                <p class="text-overlay">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="portfolio-card-two">
+                <h3 class="portfolio-card-title">Taxi Service</h3>
+                <p class="portfolio-card-text">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio-card">
+              <div class="portfolio-card-img">
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/desktop/screen-desk@1x-min.jpg 1x,
+                      ./images/desktop/screen-desk@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/tablet/screen-tab@1x-min.jpg 1x,
+                      ./images/tablet/screen-tab@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobile/screen-mob@1x-min.jpg 1x,
+                      ./images/mobile/screen-mob@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/desktop/screen-desk@1x-min.jpg"
+                    alt="screen-illustrations"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+                <p class="text-overlay">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="portfolio-card-two">
+                <h3 class="portfolio-card-title">Screen Illustrations</h3>
+                <p class="portfolio-card-text">Design</p>
+              </div>
+            </li>
+            <li class="portfolio-card">
+              <div class="portfolio-card-img">
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/desktop/online-desk@1x-min.jpg 1x,
+                      ./images/desktop/online-desk@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/tablet/online-tab@1x-min.jpg 1x,
+                      ./images/tablet/online-tab@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobile/online-mob@1x-min.jpg 1x,
+                      ./images/mobile/online-mob@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/desktop/online-desk@1x-min.jpg"
+                    alt="online-courses"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+                <p class="text-overlay">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="portfolio-card-two">
+                <h3 class="portfolio-card-title">Online Courses</h3>
+                <p class="portfolio-card-text">Marketing</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer hidden">
-        <div class="container footer-cont">
-            <div class="footer-section">
-                <a href="./index.html" class="logo footer-logo-div">Web<span class="footer-logo">Studio</span></a>
-                <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing
-                    & growth solutions.</p>
-            </div>
-            <div class="footer-social">
-                <p class="footer-social-text">Social media</p>
-                <ul class="footer-social-link">
-                    <li class="footer-social-item">
-                        <a class="footer-link" href="https://www.instagram.com">
-                            <svg class="footer-social-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a class="footer-link" href="https://https://x.com">
-                            <svg class="footer-social-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a class="footer-link" href="https://www.facebook.com">
-                            <svg class="footer-social-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a class="footer-link" href="https://www.linkedin.com">
-                            <svg class="footer-social-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-input">
-                <p class="footer-input-title">Subscribe</p>
-                <form class="footer-form">
-                    <label for="email" class="footer-label">
-                        <input type="email" placeholder="E-mail" name="email" id="email"
-                            class="footer-input-box"></label>
-                    <button class="footer-btn" type="submit">Subscribe
-                        <svg class="footer-input-icon" width="24" height="24">
-                            <use href="./images/icons.svg#icon-send"></use>
-                        </svg>
-                    </button>
-                </form>
-            </div>
+      <div class="container footer-cont">
+        <div class="footer-section">
+          <a href="./index.html" class="logo footer-logo-div"
+            >Web<span class="footer-logo">Studio</span></a
+          >
+          <p class="footer-text">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
         </div>
+        <div class="footer-social">
+          <p class="footer-social-text">Social media</p>
+          <ul class="footer-social-link">
+            <li class="footer-social-item">
+              <a class="footer-link" href="https://www.instagram.com">
+                <svg class="footer-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-link" href="https://https://x.com">
+                <svg class="footer-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-link" href="https://www.facebook.com">
+                <svg class="footer-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-link" href="https://www.linkedin.com">
+                <svg class="footer-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-input">
+          <p class="footer-input-title">Subscribe</p>
+          <form class="footer-form">
+            <label for="email" class="footer-label">
+              <input
+                type="email"
+                placeholder="E-mail"
+                name="email"
+                id="email"
+                class="footer-input-box"
+            /></label>
+            <button class="footer-btn" type="submit">
+              Subscribe
+              <svg class="footer-input-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
     </footer>
     <div class="modal-overlay hidden" data-modal>
-        <div class="modal">
-            <button class="modal-btn-close" type="button" data-modal-close><svg class="modal-btn-icon" width="8"
-                    height="8">
-                    <use href="./images/icons.svg#icon-cross"></use>
-                </svg></button>
-            <p class="modal-text-title">Leave your contacts and we will call you back</p>
-            <form class="modal-form">
-                <div class="modal-input">
-                    <label for="user-name" class="modal-label">Name</label>
-                    <div class="modal-input-cont">
-                        <input type="text" id="user-name" class="modal-input-box" name="user-name">
-                        <svg class="input-icon" width="18" height="24">
-                            <use href="./images/icons.svg#icon-people"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="modal-input">
-                    <label for="user-phone" class="modal-label">Phone</label>
-                    <div class="modal-input-cont">
-                        <input type="tel" id="user-phone" name="user-phone" class="modal-input-box">
-                        <svg class="input-icon" width="18" height="24">
-                            <use href="./images/icons.svg#icon-tel"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="modal-input">
-                    <label for="user-email" class="modal-label">Email</label>
-                    <div class="modal-input-cont">
-                        <input type="email" id="user-email" name="user-email" class="modal-input-box">
-                        <svg class="input-icon" width="18" height="24">
-                            <use href="./images/icons.svg#icon-letter"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="modal-input">
-                    <label for="user-comment" class="modal-label">Comment</label>
-                    <textarea name="user-comment" id="user-comment" class="modal-textarea modal-input-box"
-                        placeholder="Text input"></textarea>
+      <div class="modal">
+        <button class="modal-btn-close" type="button" data-modal-close>
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <p class="modal-text-title">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal-form">
+          <div class="modal-input">
+            <label for="user-name" class="modal-label">Name</label>
+            <div class="modal-input-cont">
+              <input
+                type="text"
+                id="user-name"
+                class="modal-input-box"
+                name="user-name"
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-people"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-input">
+            <label for="user-phone" class="modal-label">Phone</label>
+            <div class="modal-input-cont">
+              <input
+                type="tel"
+                id="user-phone"
+                name="user-phone"
+                class="modal-input-box"
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-input">
+            <label for="user-email" class="modal-label">Email</label>
+            <div class="modal-input-cont">
+              <input
+                type="email"
+                id="user-email"
+                name="user-email"
+                class="modal-input-box"
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-letter"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-input">
+            <label for="user-comment" class="modal-label">Comment</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="modal-textarea modal-input-box"
+              placeholder="Text input"
+            ></textarea>
 
-                    <div class="modal-input-cont">
-
-                    </div>
-                </div>
-                <div class="modal-check">
-                    <input type="checkbox" name="user-privacy" id="user-privacy" value="true"
-                        class="visually-hidden modal-check">
-                    <label for="user-privacy" class="check-text">
-                        <span class="check-box">
-                            <svg width="10" height="8" class="icon-privacy">
-                                <use href="./images/icons.svg#icon-checkmark"></use>
-                            </svg>
-                        </span>
-                        <span class="mobile-check-span">I accept the terms and conditions of the&nbsp; <a href=""
-                                class="check-link">Privacy
-                                Policy
-                            </a>
-                        </span>
-                    </label>
-                </div>
-                <button class="modal-btn" type="submit">Send</button>
-            </form>
-        </div>
+            <div class="modal-input-cont"></div>
+          </div>
+          <div class="modal-check">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+              class="visually-hidden modal-check"
+            />
+            <label for="user-privacy" class="check-text">
+              <span class="check-box">
+                <svg width="10" height="8" class="icon-privacy">
+                  <use href="./images/icons.svg#icon-checkmark"></use>
+                </svg>
+              </span>
+              <span class="mobile-check-span"
+                >I accept the terms and conditions of the&nbsp;
+                <a href="" class="check-link">Privacy Policy </a>
+              </span>
+            </label>
+          </div>
+          <button class="modal-btn" type="submit">Send</button>
+        </form>
+      </div>
     </div>
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/card.js"></script>
-</body>
-
+  </body>
 </html>
