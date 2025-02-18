@@ -558,6 +558,7 @@ a {
   background-position: center;
   padding-top: 32px;
   padding-bottom: 52px;
+  border-radius: 30px;
 }
 
 .criteria .container {
