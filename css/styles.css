@@ -1387,4 +1387,9 @@ gap: 20px;
       transform:scaleX(-1);
     }
   
+        /* Footer  */
+    
+        .footer {
+          height: 226px;
+        }
 }
