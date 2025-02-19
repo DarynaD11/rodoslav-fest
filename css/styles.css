@@ -659,6 +659,10 @@ a {
 
 /* Judge */
 
+.first {
+display: none;
+}
+
 .judge {
   padding-top: 24px;
   padding-bottom: 72px;
@@ -1262,138 +1266,125 @@ a {
     }
 
   }
+
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     padding: 0 15px;
   }
-
-  .header-logo-link {
-    margin-right: 76px;
-  }
-
-  .nav-address {
-    flex-direction: row;
-    gap: 40px;
-  }
-
-  .address-link {
-    padding: 24px 0;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-  }
-
-  /* Hero section */
-
-  .first-section {
-    padding: 188px 0px;
-    max-width: 1440px;
-    height: 600px;
-  }
-
-  @media screen and (min-resolution: 2dppx),
-    (min-resolution: 192dpi),
-    (-webkit-min-device-pixel-ratio: 2) {
+  
+    .nav-link {
+      font-weight: 500;
+      font-size: 16px;
+      margin-right: 24px;
+      }
+  
+    /* Hero  */
+  
     .first-section {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/desktop/hero-desk@2x-min.jpg);
+      background-image: linear-gradient(rgba(30, 24, 35, 0.4),
+          rgba(30, 24, 35, 0.4)),
+        url(../images/desktop/hero-desk.jpg);
+      padding: 50px 64px;
+      max-width: 1200px;
+      height: 740px;
+      margin-bottom: 108px;
     }
-  }
+  
+    .hero-loro-link {
+      margin-bottom: 386px;
+    }
+  
+    .hero-data {
+      margin-left: 400px;
+      min-width: 190px;
+      text-align: left;
+    }
+  
+    /* Second-section */
+  
+    .section-two {
+      padding: 38px 0;
+        height: 420px;
+        margin: 0 auto;
+    }
+  
+    .second-section {
+      flex-wrap: nowrap;
+      gap: 4px;
+    }
 
-  /* Second section */
+        .second-list:first-child {
+          height: 300px;
+        }
 
-  .box-icon {
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    width: 264px;
-    height: 112px;
-    background-color: #f4f4fd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8px;
-  }
+.second-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
-  .second-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-  }
+    .my-line {
+      display: grid;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      width: 200px;
+      height: 0px;
+      transform: rotate(-90deg);
+    }
 
-  .second-text {
-    font-weight: 400;
-  }
+    /* Dance  */
+  
+  
+    .portfolio-container {
+      gap: 18px;
+      width: 1136px;
+    }
+  
+    /* Criteria dance  */
+  
+    .crt-title {
+  font-weight: 800;
+      font-size: 32px;
+      line-height: 0.87;
+    }
+  
+    .crt-img img {
+      width: 600px;
+      height: 510px;
+      margin-bottom: 0;
+    }
+  
+.crt-desk {
+display: flex;
+gap: 20px;
+}
 
-  .second-list {
-    width: calc((100% - 72px) / 4);
-  }
+    .crt-inf {
+      width: 516px;
+      height: 510px;
+    }
+  
+    .crt-info-list {
+      width: 452px;
+    }
+  
+    /* Judge */
+  
+    .pag-container {
+      max-width: 1128px;
+    }
+  
+    .judge-card {
+      flex: 0 0 calc(33.333% - 16px);
+        /* 3 картки в ряд */
+        max-width: calc(33.333% - 16px);
+    }
 
-  /* section team */
-
-  .third-container {
-    row-gap: 48px;
-  }
-
-  /* Our Portfolio */
-
-  .portfolio-container {
-    row-gap: 48px;
-  }
-
-  .portfolio-card {
-    box-shadow: none;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: calc((100% - 48px) / 3);
-  }
-
-  /* footer  */
-
-  .footer {
-    padding: 100px 0;
-  }
-
-  .footer-cont {
-    display: flex;
-    align-items: baseline;
-    padding-left: 0;
-  }
-
-  .footer-section {
-    margin-right: 120px;
-    margin-bottom: 0;
-  }
-
-  .footer-logo-div {
-    display: inline-block;
-  }
-
-  .footer-social {
-    margin: 0 80px 0 0;
-  }
-
-  .footer-input-box {
-    width: 264px;
-    opacity: 1;
-  }
-
-  /* Modal overlay  */
-
-  .modal-input {
-    width: 360px;
-    margin-bottom: 8px;
-  }
-
-  .modal-input-box {
-    width: 100%;
-    padding-left: 38px;
-  }
-
-  .modal-textarea {
-    padding: 8px 16px;
-  }
+    .first {
+      display: block;
+      margin-left: 0;
+      transform:scaleX(-1);
+    }
+  
 }
