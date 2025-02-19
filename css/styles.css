@@ -659,7 +659,7 @@ a {
 
 /* Judge */
 
-.first {
+.first, .second {
 display: none;
 }
 
@@ -1215,6 +1215,10 @@ display: none;
     }
 
 /* Judge */
+
+.second {
+  display: grid;
+}
 
 .pag-container {
   max-width: 768px;
