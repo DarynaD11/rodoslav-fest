@@ -553,6 +553,7 @@ a {
         flex-direction: row;
         justify-content: center;
         text-align: center;
+        align-items: center;
     }
 
     .first-section {
@@ -564,15 +565,17 @@ a {
         width: 768px;
         height: 189px;
         margin-bottom: 50px;
+        padding: 57px 72px;
     }
 
     .hero-loro-link {
-        margin-bottom: 82px;
+        margin-bottom: 0;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         gap: 12px;
         margin-left: 0;
+        margin-right: 168px;
     }
 
     .hero-nupesu {
@@ -580,30 +583,11 @@ a {
         height: 75px;
     }
 
-    .nupesu-logo-text {
-        max-width: 176px;
-        height: 41px;
-        font-weight: 500;
-        font-size: 12px;
-        color: var(--white);
-        text-align: left;
-    }
-
-    .hero-div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 14px;
-    }
-
     .hero-data {
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 1.1;
-        text-align: center;
-        letter-spacing: -0.03em;
-        color: #00ff37;
-        width: 333px;
+        font-size: 36px;
+        line-height: 0.94;
+        text-align: left;
+        width: 190px;
     }
 
     /* Footer  */
@@ -629,6 +613,40 @@ a {
         font-weight: 500;
         font-size: 16px;
         margin-right: 24px;
+    }
+
+    /* Hero  */
+
+    .first-section-cont {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .first-section {
+        background-image: linear-gradient(
+                rgba(30, 24, 35, 0.4),
+                rgba(30, 24, 35, 0.4)
+            ),
+            url(../images/desktop/ab-hero-desk.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 1380px;
+        height: 174px;
+    }
+
+    .hero-loro-link {
+        margin-right: 600px;
+    }
+
+    .hero-data {
+        font-size: 36px;
+        line-height: 0.94;
+        text-align: left;
+        width: 190px;
     }
 
     /* Footer  */
