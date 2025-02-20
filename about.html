@@ -1,240 +1,340 @@
 <!DOCTYPE html>
 <html lang="ua">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="./images/icons.svg#icon-logo"
+            class="favicon"
+        />
+        <title>RF About</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/styles-about.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="./images/icons.svg#icon-logo" class="favicon" />
-    <title>RF About</title>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles-about.css" />
-</head>
-
-<body>
-    <header class="header-section">
-        <div class="container header-container">
-            <nav class="header-nav">
-                <a href="./index.html" class="logo header-logo-link">
-                    <svg class="logo-fest" width="80" height="80">
-                        <use href="./images/icons.svg#icon-logo"></use>
-                    </svg>
-                    <span class="logo-title">Rodoslav Fest</span>
-                </a>
-                <ul class="nav-header-link">
-                    <li class="nav-item">
-                        <a href="./index.html" class="nav-link">Головна</a>
-                    </li>
-                    <li>
-                        <a href="./about.html" class="nav-link current">Про фестиваль</a>
-                    </li>
-                    <li>
-                        <a href="nav-item" class="nav-link">Зареєструватись</a>
-                    </li>
-                    <li>
-                        <a href="nav-item" class="nav-link">Контакти</a>
-                    </li>
-                    <li>
-                        <a href="nav-item" class="nav-link"><svg class="icon-inst" width="24" height="24">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg></a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="mobile-menu-btn" type="button" data-menu-open>
-                <svg class="icon-menu" width="24" height="24">
-                    <use href="./images/icons.svg#icon-menu"></use>
-                </svg>
-            </button>
-        </div>
-        <div class="mobile-menu" data-menu>
-            <div class="container mobile-menu-container">
-                <button class="mobile-menu-close" type="button" data-menu-close>
-                    <svg class="menu-btn-icon" width="8" height="8">
-                        <use href="./images/icons.svg#icon-cross"></use>
+    <body>
+        <header class="header-section">
+            <div class="container header-container">
+                <nav class="header-nav">
+                    <a href="./index.html" class="logo header-logo-link">
+                        <svg class="logo-fest" width="80" height="80">
+                            <use href="./images/icons.svg#icon-logo"></use>
+                        </svg>
+                        <span class="logo-title">Rodoslav Fest</span>
+                    </a>
+                    <ul class="nav-header-link">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link">Головна</a>
+                        </li>
+                        <li>
+                            <a href="./about.html" class="nav-link current"
+                                >Про фестиваль</a
+                            >
+                        </li>
+                        <li>
+                            <a href="nav-item" class="nav-link"
+                                >Зареєструватись</a
+                            >
+                        </li>
+                        <li>
+                            <a href="nav-item" class="nav-link">Контакти</a>
+                        </li>
+                        <li>
+                            <a href="nav-item" class="nav-link"
+                                ><svg class="icon-inst" width="24" height="24">
+                                    <use
+                                        href="./images/icons.svg#icon-instagram"
+                                    ></use></svg
+                            ></a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn" type="button" data-menu-open>
+                    <svg class="icon-menu" width="24" height="24">
+                        <use href="./images/icons.svg#icon-menu"></use>
                     </svg>
                 </button>
-                <ul class="menu-nav-link">
-                    <li class="menu-nav-item">
-                        <a href="./index.html" class="menu-nav-link">Головна</a>
-                    </li>
-                    <li>
-                        <a href="./about.html" class="menu-nav-link menu-current">Про фестиваль</a>
-                    </li>
-                    <li>
-                        <a href="" class="menu-nav-link">Зареєструватись</a>
-                    </li>
-                    <li><a href="" class="menu-nav-link">Контакти</a></li>
-                </ul>
-                <ul class="social-link">
-                    <li class="social-item">
-                        <a class="social-item-link" href="https://www.instagram.com">
-                            <svg class="card-social-icon" width="16" height="16">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a class="social-item-link" href="https://www.facebook.com">
-                            <svg class="card-social-icon" width="16" height="16">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
             </div>
-        </div>
-    </header>
-    <main>
-        <section class="first-section">
-            <div class="container first-section-cont">
-                <a class="hero-loro-link" href="https://uni-sport.edu.ua/">
-                    <img src="./images/desktop/nupesu.png" alt="nupesu-logo" class="hero-nupesu" width="65"
-                        height="75" />
-                    <p class="nupesu-logo-text">
-                        Національний університет фізичного виховання і
-                        спорту України
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu-container">
+                    <button
+                        class="mobile-menu-close"
+                        type="button"
+                        data-menu-close
+                    >
+                        <svg class="menu-btn-icon" width="8" height="8">
+                            <use href="./images/icons.svg#icon-cross"></use>
+                        </svg>
+                    </button>
+                    <ul class="menu-nav-link">
+                        <li class="menu-nav-item">
+                            <a href="./index.html" class="menu-nav-link"
+                                >Головна</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="./about.html"
+                                class="menu-nav-link menu-current"
+                                >Про фестиваль</a
+                            >
+                        </li>
+                        <li>
+                            <a href="" class="menu-nav-link">Зареєструватись</a>
+                        </li>
+                        <li><a href="" class="menu-nav-link">Контакти</a></li>
+                    </ul>
+                    <ul class="social-link">
+                        <li class="social-item">
+                            <a
+                                class="social-item-link"
+                                href="https://www.instagram.com"
+                            >
+                                <svg
+                                    class="card-social-icon"
+                                    width="16"
+                                    height="16"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-instagram"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a
+                                class="social-item-link"
+                                href="https://www.facebook.com"
+                            >
+                                <svg
+                                    class="card-social-icon"
+                                    width="16"
+                                    height="16"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-facebook"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="first-section">
+                <div class="container first-section-cont">
+                    <a class="hero-loro-link" href="https://uni-sport.edu.ua/">
+                        <img
+                            src="./images/desktop/nupesu.png"
+                            alt="nupesu-logo"
+                            class="hero-nupesu"
+                            width="65"
+                            height="75"
+                        />
+                        <p class="nupesu-logo-text">
+                            Національний університет фізичного виховання і
+                            спорту України
+                        </p>
+                    </a>
+                    <div class="hero-div">
+                        <p class="hero-data">26 квітня 2025 року</p>
+                    </div>
+                </div>
+            </section>
+            <section class="about">
+                <div class="container about-container">
+                    <div class="ab-title-img">
+                        <picture>
+                            <source
+                                media="(min-width: 1158px)"
+                                srcset="./images/desktop/ab-title-desk.jpg"
+                            />
+                            <source
+                                media="(min-width: 768px)"
+                                srcset="./images/tablet/ab-title-tab.jpg"
+                            />
+                            <source
+                                media="(max-width: 767px)"
+                                srcset="./images/mobile/ab-title-mob.jpg"
+                            />
+                            <img
+                                src="./images/desktop/ab-title-desk.jpg"
+                                alt="folk dance picture"
+                            />
+                        </picture>
+                    </div>
+                    <p class="ab-text">
+                        <span>Rodoslav Fest</span> - це яскраве свято мистецтва,
+                        культури і творчості в Україні. Розташований у самому
+                        серці Києва, цей фестиваль запрошує учасників та
+                        глядачів поринути у світ таланту та натхнення. Завдяки
+                        насиченій програмі заходів та конкурсів, Rodoslav Fest
+                        демонструє найкращі зразки українського мистецтва,
+                        об'єднуючи людей з усіх верств суспільства. Приєднуйтесь
+                        до нас на цьому унікальному заході, який не лише
+                        підкреслює красу культури нашої країни, але й сприяє
+                        згуртуванню та зближенню митців.
                     </p>
-                </a>
-                <div class="hero-div">
-                    <p class="hero-data">26 квітня 2025 року</p>
                 </div>
-            </div>
-        </section>
-        <section class="about">
-            <div class="container about-container">
-                <div class="ab-title-img">
-                    <picture>
-                        <source media="(min-width: 1158px)" srcset="./images/desktop/ab-title-desk.jpg" />
-                        <source media="(min-width: 768px)" srcset="./images/tablet/ab-title-tab.jpg" />
-                        <source media="(max-width: 767px)" srcset="./images/mobile/ab-title-mob.jpg" />
-                        <img src="./images/desktop/ab-title-desk.jpg" alt="folk dance picture">
-                    </picture>
-                </div>
-                <p class="ab-text">
-                    <span>Rodoslav Fest</span> - це яскраве свято мистецтва, культури і творчості в Україні.
-                    Розташований у самому
-                    серці Києва, цей фестиваль запрошує учасників та глядачів поринути у світ таланту та натхнення.
-                    Завдяки насиченій програмі заходів та конкурсів, Rodoslav Fest демонструє найкращі зразки
-                    українського мистецтва, об'єднуючи людей з усіх верств суспільства. Приєднуйтесь до нас на цьому
-                    унікальному заході, який не лише підкреслює красу культури нашої країни, але й сприяє згуртуванню та
-                    зближенню митців.
-                </p>
-            </div>
-        </section>
-        <section class="goal">
-            <div class="container goal-container">
-                <h1 class="goal-title">Наша мета</h1>
-                <div class="goal-text">
-                    <h2 class="goal-title-num">01</h2>
-                    <p class="goal-text-num">
-                        Відродження, збереження, розвиток та популяризація народних традицій національних культур у
-                        галузі хореографічного мистецтва
-                    </p>
-                </div>
-                <picture class="goal-img">
-                    <source media="(min-width: 1158px)" srcset="./images/desktop/ab-goal-1-desk.jpg" />
-                    <source media="(min-width: 768px)" srcset="./images/tablet/ab-goal-1-tab.jpg" />
-                    <source media="(max-width: 767px)" srcset="./images/mobile/ab-goal-1-mob.jpg" />
-                    <img src="./images/desktop/ab-goal-1-desk.jpg" alt="folk dance picture">
-                </picture>
-                <div class="goal-text">
-                    <h2 class="goal-title-num">02</h2>
-                    <p class="goal-text-num">
-                        Пошук та розвиток нових форм народно-сценічного танцю, сучасного та класичного хореографічного
-                        мистецтва на основі народних традицій як України так і інших країн світу</p>
-                </div>
-                <picture class="goal-img">
-                    <source media="(min-width: 1158px)" srcset="./images/desktop/ab-goal-2-desk.jpg" />
-                    <source media="(min-width: 768px)" srcset="./images/tablet/ab-goal-2-tab.jpg" />
-                    <source media="(max-width: 767px)" srcset="./images/mobile/ab-goal-2-mob.jpg" />
-                    <img src="./images/desktop/ab-goal-2-desk.jpg" alt="folk dance picture">
-                </picture>
-                <div class="goal-text">
-                    <h2 class="goal-title-num">03</h2>
-                    <p class="goal-text-num">
-                        Виховання молоді на кращих традиціях національних хореографічних культур</p>
-                </div>
-            </div>
-        </section>
-        <section class="btn"><button type="button" class="goal-btn">Зареєструватись</button></section>
-    </main>
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-logo">
-                <a href="./index.html" class="logo header-logo-link">
-                    <svg class="footer-logo-fest" width="80" height="80">
-                        <use href="./images/icons.svg#icon-logo"></use>
+            </section>
+            <section class="goal">
+                <div class="container goal-container">
+                    <h1 class="goal-title">Наша мета</h1>
+                    <div class="goal-text">
+                        <h2 class="goal-title-num">01</h2>
+                        <p class="goal-text-num">
+                            Відродження, збереження, розвиток та популяризація
+                            народних традицій національних культур у галузі
+                            хореографічного мистецтва
+                        </p>
+                    </div>
+                    <div class="goal-text">
+                        <h2 class="goal-title-num">02</h2>
+                        <p class="goal-text-num">
+                            Пошук та розвиток нових форм народно-сценічного
+                            танцю, сучасного та класичного хореографічного
+                            мистецтва на основі народних традицій як України так
+                            і інших країн світу
+                        </p>
+                    </div>
+                    <div class="goal-text">
+                        <h2 class="goal-title-num">03</h2>
+                        <p class="goal-text-num">
+                            Виховання молоді на кращих традиціях національних
+                            хореографічних культур
+                        </p>
+                    </div>
+                    <svg class="goal-icon">
+                        <use href="./images/icons.svg#icon-ab-flow"></use>
                     </svg>
-                    <span class="footer-logo-title">Rodoslav Fest</span>
-                </a>
+                </div>
+            </section>
+            <section class="btn">
+                <button type="button" class="goal-btn">Зареєструватись</button>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-logo">
+                    <a href="./index.html" class="logo header-logo-link">
+                        <svg class="footer-logo-fest" width="80" height="80">
+                            <use href="./images/icons.svg#icon-logo"></use>
+                        </svg>
+                        <span class="footer-logo-title">Rodoslav Fest</span>
+                    </a>
+                </div>
+                <div class="footer-nupesu">
+                    <a
+                        class="footer-loro-link"
+                        href="https://uni-sport.edu.ua/"
+                    >
+                        <img
+                            src="./images/desktop/nupesu.png"
+                            alt="nupesu-logo"
+                            class="footer-nupesu-logo"
+                            width="65"
+                            height="75"
+                        />
+                        <p class="footer-nupesu-logo-text">
+                            Національний університет фізичного виховання і
+                            спорту України
+                        </p>
+                    </a>
+                </div>
+                <div class="footer-nav">
+                    <ul class="footer-nav-header-link">
+                        <li class="footer-nav-item">
+                            <a href="./index.html" class="footer-nav-link"
+                                >Головна</a
+                            >
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="./about.html" class="footer-nav-link"
+                                >Про фестиваль</a
+                            >
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="nav-item" class="footer-nav-link"
+                                >Зареєструватись</a
+                            >
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="nav-item" class="footer-nav-link"
+                                >Контакти</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <ul class="social-link">
+                        <li class="social-item">
+                            <a
+                                class="footer-social-item-link"
+                                href="https://www.instagram.com"
+                            >
+                                <svg
+                                    class="footer-card-social-icon"
+                                    width="16"
+                                    height="16"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-instagram"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a
+                                class="footer-social-item-link"
+                                href="https://www.facebook.com"
+                            >
+                                <svg
+                                    class="footer-card-social-icon"
+                                    width="16"
+                                    height="16"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-facebook"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-cont">
+                    <p class="footer-cont-text">Контакти</p>
+                    <ul class="nav-address">
+                        <li>
+                            <a
+                                href="mailto:info@devstudio.com"
+                                class="address-link"
+                                >info@info.com</a
+                            >
+                        </li>
+                        <li>
+                            <a href="tel:+110001111111" class="address-link"
+                                >+11 (000) 111-11-11</a
+                            >
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-nupesu">
-                <a class="footer-loro-link" href="https://uni-sport.edu.ua/">
-                    <img src="./images/desktop/nupesu.png" alt="nupesu-logo" class="footer-nupesu-logo" width="65"
-                        height="75" />
-                    <p class="footer-nupesu-logo-text">
-                        Національний університет фізичного виховання і
-                        спорту України
-                    </p>
-                </a>
-            </div>
-            <div class="footer-nav">
-                <ul class="footer-nav-header-link">
-                    <li class="footer-nav-item">
-                        <a href="./index.html" class="footer-nav-link">Головна</a>
-                    </li>
-                    <li class="footer-nav-item">
-                        <a href="./about.html" class="footer-nav-link">Про фестиваль</a>
-                    </li>
-                    <li class="footer-nav-item">
-                        <a href="nav-item" class="footer-nav-link">Зареєструватись</a>
-                    </li>
-                    <li class="footer-nav-item">
-                        <a href="nav-item" class="footer-nav-link">Контакти</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <ul class="social-link">
-                    <li class="social-item">
-                        <a class="footer-social-item-link" href="https://www.instagram.com">
-                            <svg class="footer-card-social-icon" width="16" height="16">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a class="footer-social-item-link" href="https://www.facebook.com">
-                            <svg class="footer-card-social-icon" width="16" height="16">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-cont">
-                <p class="footer-cont-text">Контакти</p>
-                <ul class="nav-address">
-                    <li>
-                        <a href="mailto:info@devstudio.com" class="address-link">info@info.com</a>
-                    </li>
-                    <li>
-                        <a href="tel:+110001111111" class="address-link">+11 (000) 111-11-11</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <script src="./js/menu.js"></script>
-    <script src="./js/modal.js"></script>
-    <script src="./js/card.js"></script>
-    <script src="./js/pagination.js"></script>
-</body>
-
+        </footer>
+        <script src="./js/menu.js"></script>
+        <script src="./js/modal.js"></script>
+        <script src="./js/card.js"></script>
+        <script src="./js/pagination.js"></script>
+    </body>
 </html>
