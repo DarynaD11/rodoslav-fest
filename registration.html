@@ -9,7 +9,7 @@
             href="./images/icons.svg#icon-logo"
             class="favicon"
         />
-        <title>RF About</title>
+        <title>RF Registration</title>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -20,7 +20,7 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="./css/styles-about.css" />
+        <link rel="stylesheet" href="./css/styles-registration.css" />
     </head>
 
     <body>
@@ -38,12 +38,14 @@
                             <a href="./index.html" class="nav-link">Головна</a>
                         </li>
                         <li>
-                            <a href="./about.html" class="nav-link current"
+                            <a href="./about.html" class="nav-link"
                                 >Про фестиваль</a
                             >
                         </li>
                         <li>
-                            <a href="./registration.html" class="nav-link"
+                            <a
+                                href="./registration.html"
+                                class="nav-link current"
                                 >Зареєструватись</a
                             >
                         </li>
@@ -86,14 +88,14 @@
                             >
                         </li>
                         <li>
-                            <a
-                                href="./about.html"
-                                class="menu-nav-link menu-current"
+                            <a href="./about.html" class="menu-nav-link"
                                 >Про фестиваль</a
                             >
                         </li>
                         <li>
-                            <a href="./registration.html" class="menu-nav-link"
+                            <a
+                                href="./registration.html"
+                                class="menu-nav-link menu-current"
                                 >Зареєструватись</a
                             >
                         </li>
@@ -141,93 +143,72 @@
             </div>
         </header>
         <main>
-            <section class="first-section">
-                <div class="container first-section-cont">
-                    <img
-                        src="./images/desktop/emblema.jpg"
-                        alt="Rodoslav-Logo"
-                        class="emblem"
-                    />
-                    <h1 class="logo-title-hero">
-                        Всеукраїнський фестиваль-конкурс хореографічного
-                        мистецтва
-                    </h1>
+            <section class="hero-section">
+                <div class="hero-reg">
+                    <div class="back-top"></div>
+                    <div class="back-bottom">
+                        <div class="hero-box-info">
+                            <p class="hero-text-info">
+                                Реєстрація триває до 11 квітня 2025 року за
+                                <a
+                                    href="https://forms.gle/cj4jh3NkwbeASgi37"
+                                    class="link-decor"
+                                    >посиланням</a
+                                >
+                            </p>
+                        </div>
+                        <div class="hero-box-place">
+                            <p class="hero-text-place">
+                                Місце проведення: Національний університет
+                                фізичного виховання і спорту України. Адреса:
+                                вул. Фізкультури, 1, місто Київ, Україна, 03150
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section class="about">
-                <div class="container about-container">
-                    <div class="ab-title-img">
-                        <picture>
-                            <source
-                                media="(min-width: 1158px)"
-                                srcset="./images/desktop/ab-title-desk.jpg"
-                            />
-                            <source
-                                media="(min-width: 768px)"
-                                srcset="./images/tablet/ab-title-tab.jpg"
-                            />
-                            <source
-                                media="(max-width: 767px)"
-                                srcset="./images/mobile/ab-title-mob.jpg"
-                            />
-                            <img
-                                src="./images/desktop/ab-title-desk.jpg"
-                                alt="folk dance picture"
-                            />
-                        </picture>
-                    </div>
-                    <p class="ab-text">
-                        <span>Rodoslav Fest</span> - це яскраве свято мистецтва,
-                        культури і творчості в Україні. Розташований у самому
-                        серці Києва, цей фестиваль запрошує учасників та
-                        глядачів поринути у світ таланту та натхнення. Завдяки
-                        насиченій програмі заходів та конкурсів, Rodoslav Fest
-                        демонструє найкращі зразки українського мистецтва,
-                        об'єднуючи людей з усіх верств суспільства. Приєднуйтесь
-                        до нас на цьому унікальному заході, який не лише
-                        підкреслює красу культури нашої країни, але й сприяє
-                        згуртуванню та зближенню митців.
-                    </p>
-                </div>
+            <section class="regulations container">
+                <h2 class="regul-title">ПОЛОЖЕНННЯ</h2>
+                <p class="regul-text">
+                    З положенням про фестиваль-конкурс можна ознайомитись
+                    <a class="regul-decor">тут</a>
+                </p>
+                <svg weight="214" height="266">
+                    <use href="./images/icons.svg#icon-regul"></use>
+                </svg>
             </section>
-            <section class="goal">
-                <div class="container goal-container">
-                    <h1 class="goal-title">Наша мета</h1>
-                    <div class="goal-text">
-                        <h2 class="goal-title-num">01</h2>
-                        <p class="goal-text-num">
-                            Відродження, збереження, розвиток та популяризація
-                            народних традицій національних культур у галузі
-                            хореографічного мистецтва
-                        </p>
-                    </div>
-                    <div class="goal-text">
-                        <h2 class="goal-title-num">02</h2>
-                        <p class="goal-text-num">
-                            Пошук та розвиток нових форм народно-сценічного
-                            танцю, сучасного та класичного хореографічного
-                            мистецтва на основі народних традицій як України так
-                            і інших країн світу
-                        </p>
-                    </div>
-                    <div class="goal-text">
-                        <h2 class="goal-title-num">03</h2>
-                        <p class="goal-text-num">
-                            Виховання молоді на кращих традиціях національних
-                            хореографічних культур
-                        </p>
-                    </div>
-                    <svg class="goal-icon">
-                        <use href="./images/icons.svg#icon-ab-flow"></use>
-                    </svg>
-                </div>
-            </section>
-            <section class="btn">
-                <a href="./registration.html"
-                    ><button type="button" class="goal-btn">
-                        Зареєструватись
-                    </button></a
-                >
+            <section class="cost">
+                <h3 class="cost-title">Фінансові умови участі з учасника</h3>
+                <ul class="cost-list">
+                    <li class="cost-li first">
+                        <p class="cost-li-title">Соло</p>
+                        <svg class="cost-svg" width="140" height="176">
+                            <use href="./images/icons.svg#icon-cost"></use>
+                        </svg>
+                        <p class="text-cost">800 грн</p>
+                    </li>
+                    <li class="cost-li first">
+                        <p class="cost-li-title">Соло</p>
+                        <svg class="cost-svg" width="140" height="176">
+                            <use href="./images/icons.svg#icon-cost"></use>
+                        </svg>
+                        <p class="text-cost">800 грн</p>
+                    </li>
+                    <li class="cost-li first">
+                        <p class="cost-li-title">Соло</p>
+                        <svg class="cost-svg" width="140" height="176">
+                            <use href="./images/icons.svg#icon-cost"></use>
+                        </svg>
+                        <p class="text-cost">800 грн</p>
+                    </li>
+                    <li class="cost-li first">
+                        <p class="cost-li-title">Соло</p>
+                        <svg class="cost-svg" width="140" height="176">
+                            <use href="./images/icons.svg#icon-cost"></use>
+                        </svg>
+                        <p class="text-cost">800 грн</p>
+                    </li>
+                </ul>
             </section>
         </main>
         <footer class="footer">
