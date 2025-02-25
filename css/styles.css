@@ -590,7 +590,7 @@ a {
 .crt-inf {
     border-radius: 15px;
     width: 335px;
-    height: 566px;
+    height: 456px;
     background: #fbfada;
     padding: 32px 10px;
 }
@@ -632,34 +632,27 @@ a {
 }
 
 .item1::before {
-    background-color: #262629;
-}
-
-.item2::before {
     background-color: #424243;
 }
 
-.item3::before {
+.item2::before {
     background-color: #81705c;
 }
 
-.item4::before {
+.item3::before {
     background-color: #a88758;
 }
 
-.item5::before {
-    background-color: #cda155;
-}
-.item6::before {
+.item4::before {
     background-color: #fdd86b;
 }
-.item7::before {
+
+.item5::before {
     background-color: #fff192;
 }
 
 /* Judge */
 
-.first,
 .second {
     display: none;
 }
@@ -1198,7 +1191,7 @@ a {
 
     .crt-inf {
         width: 614px;
-        height: 444px;
+        height: 346px;
         margin: 0 auto;
     }
 
@@ -1293,12 +1286,12 @@ a {
             url(../images/desktop/hero-desk.jpg);
         padding: 50px 64px;
         max-width: 1440px;
-        height: 740px;
+        height: 1228px;
         margin-bottom: 108px;
     }
 
     .hero-loro-link {
-        margin-bottom: 386px;
+        margin-bottom: 836px;
     }
 
     .hero-data {
@@ -1370,8 +1363,21 @@ a {
         height: 510px;
     }
 
+    .crt-info-title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.33;
+    }
+
     .crt-info-list {
         width: 452px;
+    }
+
+    .crt-info-text {
+        width: 442px;
+        font-size: 19px;
+        line-height: 1.26;
+        margin-bottom: 14px;
     }
 
     /* Judge */
@@ -1380,16 +1386,19 @@ a {
         max-width: 1128px;
     }
 
-    .judge-card {
-        flex: 0 0 calc(33.333% - 16px);
-        /* 3 картки в ряд */
-        max-width: calc(33.333% - 16px);
-    }
-
     .first {
         display: block;
         margin-left: 0;
         transform: scaleX(-1);
+    }
+
+    .judge-container {
+        row-gap: 30px;
+        column-gap: 50px;
+    }
+
+    .judge-card {
+        max-width: 360px;
     }
 
     /* Footer  */

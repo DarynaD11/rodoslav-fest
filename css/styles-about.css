@@ -243,74 +243,31 @@ a {
 /* Hero  */
 
 .first-section-cont {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    margin: 0 auto;
 }
 
 .first-section {
-    background-image: linear-gradient(
-            rgba(30, 24, 35, 0.4),
-            rgba(30, 24, 35, 0.4)
-        ),
-        url(../images/mobile/ab-hero-mob.jpg);
-    padding: 26px 4px 26px 4px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 30px;
-    width: 375px;
-    height: 189px;
+    padding: 4px 20px 16px 20px;
+}
+
+.emblem {
+    width: 82px;
+    height: 82px;
     margin: 0 auto;
-    margin-bottom: 36px;
 }
 
-.hero-loro-link {
-    margin-bottom: 82px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 12px;
-    margin-left: 0;
-}
-
-.hero-nupesu {
-    width: 35px;
-    height: 41px;
-}
-
-.nupesu-logo-text {
-    max-width: 176px;
-    height: 41px;
-    font-weight: 500;
-    font-size: 12px;
-    color: var(--white);
-    text-align: left;
-}
-
-.hero-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 14px;
-}
-
-.hero-data {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 1.1;
+.logo-title-hero {
     text-align: center;
-    letter-spacing: -0.03em;
-    color: #00ff37;
-    width: 333px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #325956;
 }
 
 /* About  */
 
 .about {
     height: 680px;
-    margin-bottom: 82px;
+    margin-bottom: 42px;
 }
 
 .about-container {
@@ -673,53 +630,24 @@ a {
 
     /* Hero  */
 
-    .first-section-cont {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }
-
     .first-section {
-        background-image: linear-gradient(
-                rgba(30, 24, 35, 0.4),
-                rgba(30, 24, 35, 0.4)
-            ),
-            url(../images/tablet/ab-hero-tab.jpg);
-        width: 768px;
-        height: 189px;
-        margin-bottom: 50px;
-        padding: 57px 72px;
+        padding: 4px 32px 10px 32px;
     }
 
-    .hero-loro-link {
-        margin-bottom: 0;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 12px;
-        margin-left: 0;
-        margin-right: 168px;
+    .emblem {
+        width: 108px;
+        height: 108px;
     }
 
-    .hero-nupesu {
-        width: 64px;
-        height: 75px;
-    }
-
-    .hero-data {
+    .logo-title-hero {
         font-size: 36px;
-        line-height: 0.94;
-        text-align: left;
-        width: 190px;
     }
 
     /* About  */
 
     .about {
         height: 1100px;
-        margin-bottom: 22px;
+        margin-bottom: 12px;
     }
 
     .ab-title-img {
@@ -801,36 +729,17 @@ a {
 
     /* Hero  */
 
-    .first-section-cont {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }
-
     .first-section {
-        background-image: linear-gradient(
-                rgba(30, 24, 35, 0.4),
-                rgba(30, 24, 35, 0.4)
-            ),
-            url(../images/desktop/ab-hero-desk.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width: 1440px;
-        height: 174px;
+        padding: 8px 250px 20px 250px;
     }
 
-    .hero-loro-link {
-        margin-right: 600px;
+    .emblem {
+        width: 134px;
+        height: 134px;
     }
 
-    .hero-data {
-        font-size: 36px;
-        line-height: 0.94;
-        text-align: left;
-        width: 190px;
+    .logo-title-hero {
+        font-size: 42px;
     }
 
     /* About  */
