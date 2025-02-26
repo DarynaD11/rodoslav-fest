@@ -231,7 +231,12 @@
                             залюбки дамо відповідь :)
                         </p>
                     </div>
-                    <form class="form-box" id="contact-form">
+                    <form
+                        class="form-box"
+                        id="contact-form"
+                        action="https://formsubmit.co/darinadyadyuk11@gmail.com"
+                        method="POST"
+                    >
                         <div class="form-input">
                             <label for="user-name" class="form-label"
                                 >Як до Вас звертатись?</label
@@ -284,11 +289,18 @@
                                 required
                             ></textarea>
                         </div>
+                        <p id="response-message">✅ Питання надіслано!</p>
                         <button type="submit" class="form-btn">
                             Надіслати
                         </button>
+                        <input
+                            type="hidden"
+                            name="_captcha"
+                            value="false"
+                            class="visually-hidden"
+                        />
+                        <!-- Вимкнення капчі -->
                     </form>
-                    <p id="response-message"></p>
                 </div>
             </section>
         </main>
@@ -406,36 +418,35 @@
             document
                 .getElementById("contact-form")
                 .addEventListener("submit", function (e) {
-                    e.preventDefault();
+                    e.preventDefault(); // Запобігає перезавантаженню сторінки
 
-                    var form = e.target;
-                    var formData = {
-                        name: form.name.value,
-                        email: form.email.value,
-                        message: form.message.value,
-                    };
+                    var formData = new FormData(this);
+                    var responseMessage =
+                        document.getElementById("response-message");
 
-                    fetch(
-                        "https://script.google.com/macros/s/AKfycbz0Mkd1uJ5__jFAgZV8X8ccS92j5bGeP0aOuPCvprQyRRuv1H7SoGH0nsAPrvWO1Bkx/exec",
-                        {
-                            method: "POST",
-                            headers: { "Content-Type": "application/json" },
-                            body: JSON.stringify(formData),
-                        }
-                    )
-                        .then((response) => response.text())
-                        .then((data) => {
-                            document.getElementById(
-                                "response-message"
-                            ).innerText = "✅ Повідомлення надіслано!";
-                            form.reset(); // Очищення форми після успішного відправлення
+                    fetch(this.action, {
+                        method: "POST",
+                        body: formData,
+                    })
+                        .then((response) => {
+                            if (response.ok) {
+                                responseMessage.style.visibility = "visible";
+                                responseMessage.style.opacity = "1"; // Плавна поява
+                                this.reset(); // Очистити форму
+
+                                // Приховати повідомлення через 10 секунд
+                                setTimeout(() => {
+                                    responseMessage.style.opacity = "0"; // Плавне зникнення
+                                    setTimeout(() => {
+                                        responseMessage.style.visibility =
+                                            "hidden"; // Повністю приховати
+                                    }, 300); // Час має збігатися з transition
+                                }, 10000);
+                            } else {
+                                alert("❌ Сталася помилка! Спробуйте ще раз.");
+                            }
                         })
-                        .catch((error) => {
-                            document.getElementById(
-                                "response-message"
-                            ).innerText = "❌ Сталася помилка!";
-                            console.error("Помилка:", error);
-                        });
+                        .catch((error) => console.error("Помилка:", error));
                 });
         </script>
     </body>

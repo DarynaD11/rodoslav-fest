@@ -60,6 +60,19 @@ a {
     fill: #e7e9fc;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .hidden {
     display: none;
 }
@@ -545,7 +558,17 @@ a {
 
 .form-input:nth-child(3) {
     height: 210px;
-    margin-bottom: 24px;
+    margin-bottom: 14px;
+}
+
+#response-message {
+    text-align: center;
+    color: green;
+    margin-bottom: 10px;
+    height: 20px; /* Фіксована висота, щоб кнопка не зміщувалась */
+    visibility: hidden; /* Початково приховуємо без зміщення */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .form-btn {
@@ -956,7 +979,7 @@ a {
 
     .form-input:nth-child(3) {
         height: 210px;
-        margin-bottom: 24px;
+        margin-bottom: 10px;
     }
 
     .form-btn {
@@ -1116,7 +1139,7 @@ a {
 
     .form-input:nth-child(3) {
         height: 210px;
-        margin-bottom: 24px;
+        margin-bottom: 10px;
     }
 
     .form-btn {
