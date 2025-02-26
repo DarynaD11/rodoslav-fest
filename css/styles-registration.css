@@ -1052,40 +1052,44 @@ a {
     /* Form  */
 
     .form {
-        height: 920px;
-        max-width: 768px;
+        height: 614px;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 100px;
     }
 
     .form-div {
         padding: 16px 48px;
         display: flex;
+        height: 614px;
     }
 
     .form-info {
-        max-width: 362px;
+        width: 362px;
     }
 
     .form-img {
         top: 316px;
-        left: 120px;
+        left: 50px;
         transform: rotate(0deg);
         width: 282px;
         height: 298px;
     }
 
     .form-section-title {
-        margin-top: 160px;
+        margin-top: 68px;
         font-size: 42px;
         margin-bottom: 30px;
     }
 
     .form-section-text {
         font-size: 27px;
-        width: 610px;
+        width: 362px;
         margin-bottom: 46px;
     }
 
     .form-box {
+        margin-top: 40px;
         padding: 20px 40px;
         width: 474px;
         height: 478px;
@@ -1118,7 +1122,7 @@ a {
     .form-btn {
         margin-left: 84px;
     }
-    
+
     /* Footer  */
 
     .footer {
