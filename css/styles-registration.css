@@ -56,10 +56,6 @@ a {
     text-decoration: none;
 }
 
-.favicon {
-    fill: #e7e9fc;
-}
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -195,7 +191,7 @@ a {
     flex-direction: column;
     gap: 40px;
     margin-bottom: auto;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 1.11;
     font-weight: 500;
     letter-spacing: -0.02em;
@@ -260,18 +256,21 @@ a {
 }
 
 .hero-section {
-    width: 375px;
+    min-width: 320px;
+    max-width: 375px;
     height: 682px;
     margin: 0 auto;
 }
 
 .hero-reg {
-    width: 375px;
+    min-width: 320px;
+    max-width: 375px;
     height: 682px;
 }
 
 .back-top {
     background-image: url(../images/mobile/reg-hero-girl-mob.jpg);
+    min-width: 320px;
     max-width: 375px;
     height: 420px;
     background-repeat: no-repeat;
@@ -280,6 +279,7 @@ a {
 .back-bottom {
     margin-top: -1px;
     background-image: url(../images/mobile/reg-hero-mob.jpg);
+    min-width: 320px;
     max-width: 375px;
     height: 262px;
     background-repeat: no-repeat;
@@ -288,7 +288,7 @@ a {
 
 .hero-box-info {
     border-radius: 15px;
-    max-width: 333px;
+    max-width: 320px;
     height: 87px;
     background: rgba(18, 55, 42, 0.6);
     margin-bottom: 12px;
@@ -321,15 +321,15 @@ a {
 
 .hero-box-place {
     border-radius: 15px;
-    max-width: 333px;
+    max-width: 320px;
     height: 157px;
     background: rgba(255, 255, 255, 0.3);
-    padding: 6px 10px;
+    padding: 6px 4px;
 }
 
 .hero-text-place {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     color: var(--white);
 }
 
@@ -372,7 +372,7 @@ a {
 .regulations > svg {
     position: absolute;
     top: 60px;
-    right: -35px;
+    right: 10px;
 }
 
 /* Cost  */
@@ -459,13 +459,13 @@ a {
 
 .form-div {
     position: relative;
-    padding: 16px 24px;
+    padding: 16px 4px;
 }
 
 .form-img {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 5px;
     transform: rotate(-90deg);
     width: 137px;
     height: 144px;
@@ -474,14 +474,14 @@ a {
 .form-section-title {
     margin-top: 130px;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 26px;
     color: var(--black);
     margin-bottom: 24px;
 }
 
 .form-section-text {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 127%;
     color: var(--black);
     width: 297px;
@@ -489,10 +489,11 @@ a {
 }
 
 .form-box {
-    padding: 46px 22px;
+    padding: 46px 14px;
     margin: 0 auto;
     border-radius: 10px;
-    width: 325px;
+    min-width: 300px;
+    max-width: 325px;
     box-shadow: 2px 8px 11px 2px rgba(0, 0, 0, 0.25);
     background: #c8d1a8;
 }
@@ -596,7 +597,6 @@ a {
 /* Footer  */
 
 .footer {
-    height: 500px;
     background: #1e1823;
     padding: 42px 0;
 }
@@ -669,6 +669,12 @@ a {
     line-height: 1.14;
     letter-spacing: -0.02em;
     color: var(--white);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+    color: var(--lightgreen);
 }
 
 .footer-social-item-link {
@@ -716,9 +722,10 @@ a {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    align-items: center;
 }
 
-.address-link {
+.f-address-link {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
@@ -728,8 +735,8 @@ a {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address-link:hover,
-.address-link:focus {
+.f-address-link:hover,
+.f-address-link:focus {
     color: var(--orange);
 }
 
@@ -829,14 +836,14 @@ a {
     /* mobile menu */
 
     .mobile-menu-btn,
-    mobile-menu {
+    .mobile-menu {
         display: none;
     }
 
     /* Hero  */
 
     .hero-section {
-        width: 768px;
+        max-width: 768px;
         height: 1400px;
         margin: 0 auto;
     }
@@ -848,6 +855,7 @@ a {
 
     .back-top {
         background-image: url(../images/tablet/reg-hero-girl-tab.jpg);
+        min-width: 768px;
         max-width: 768px;
         height: 860px;
         background-repeat: no-repeat;
@@ -856,6 +864,7 @@ a {
     .back-bottom {
         margin-top: -1px;
         background-image: url(../images/tablet/reg-hero-tab.jpg);
+        min-width: 768px;
         max-width: 768px;
         height: 538px;
         background-repeat: no-repeat;
@@ -916,7 +925,7 @@ a {
     .regulations > svg {
         position: absolute;
         top: -45px;
-        right: -15px;
+        right: 55px;
         transform: rotate(-45deg);
     }
 
@@ -935,6 +944,7 @@ a {
 
     .form-img {
         top: 20px;
+        right: 30px;
         transform: rotate(260deg);
         width: 250px;
         height: 264px;
@@ -954,7 +964,7 @@ a {
 
     .form-box {
         padding: 20px 40px;
-        width: 474px;
+        max-width: 474px;
         height: 478px;
     }
 
@@ -988,10 +998,6 @@ a {
 
     /* Footer  */
 
-    .footer {
-        height: 300px;
-    }
-
     .footer-container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -1014,21 +1020,25 @@ a {
     /* Hero  */
 
     .hero-section {
-        width: 1200px;
+        min-width: 1200px;
+        max-width: 1400px;
         height: 835px;
         margin: 0 auto;
     }
 
     .hero-reg {
-        width: 1200px;
+        min-width: 1200px;
+        max-width: 1400px;
         height: 835px;
         display: flex;
         flex-direction: row;
+        margin: 0 auto;
     }
 
     .back-top {
         background-image: url(../images/desktop/reg-hero-girl-desk.jpg);
-        width: 735px;
+        min-width: 596px;
+        max-width: 596px;
         height: 823px;
         background-repeat: no-repeat;
     }
@@ -1036,7 +1046,8 @@ a {
     .back-bottom {
         margin-top: 0;
         background-image: url(../images/desktop/reg-hero-desk.jpg);
-        width: 735px;
+        min-width: 596px;
+        max-width: 596px;
         height: 823px;
         margin-left: -1px;
         background-repeat: no-repeat;
@@ -1063,8 +1074,8 @@ a {
 
     .regulations > svg {
         position: absolute;
-        top: -85px;
-        right: -15px;
+        top: -95px;
+        right: 90px;
         width: 290px;
         height: 362px;
         transform: rotate(-45deg);
@@ -1147,8 +1158,4 @@ a {
     }
 
     /* Footer  */
-
-    .footer {
-        height: 226px;
-    }
 }
