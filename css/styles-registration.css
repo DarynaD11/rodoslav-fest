@@ -336,7 +336,7 @@ a {
 /* Regulations  */
 
 .regulations {
-    height: 325px;
+    height: 525px;
     padding: 30px 26px;
     position: relative;
 }
@@ -352,6 +352,24 @@ a {
     font-weight: 400;
     font-size: 22px;
     color: #000;
+    margin-bottom: 200px;
+}
+
+.regul-text-pre {
+    font-weight: 500;
+    font-size: 22px;
+    color: #000;
+    text-decoration: underline;
+    transition: babackground-color 250ms cubic-bezier(1, 0, 0, 1),
+        border-radius 250ms cubic-bezier(1, 0, 0, 1);
+}
+
+.regul-img {
+    position: absolute;
+    top: 450px;
+    left: 0px;
+    width: 200px;
+    transform: rotate(-45deg);
 }
 
 .regul-decor {
@@ -369,10 +387,17 @@ a {
     background-color: var(--orange);
 }
 
+.regul-text-pre:hover,
+.regul-text-pre:focus {
+    background-color: var(--lightgreen);
+    border-radius: 8px;
+}
+
 .regulations > svg {
     position: absolute;
     top: 60px;
     right: 10px;
+    
 }
 
 /* Cost  */
@@ -907,7 +932,7 @@ a {
     /* Regulations  */
 
     .regulations {
-        height: 325px;
+        height: 450px;
         padding: 60px 26px;
         position: relative;
     }
@@ -920,6 +945,7 @@ a {
     .regul-text {
         font-size: 24px;
         max-width: 430px;
+        margin-bottom: 50px;
     }
 
     .regulations > svg {
@@ -927,6 +953,17 @@ a {
         top: -45px;
         right: 55px;
         transform: rotate(-45deg);
+    }
+
+    .regul-text-pre {
+        font-weight: 600;
+        font-size: 24px;
+        width: 500px;
+    }
+
+    .regul-img {
+        width: 350px;
+        top: 300px;
     }
 
     /* Cost  */
@@ -1067,7 +1104,7 @@ a {
     /* Regulations  */
 
     .regulations {
-        height: 325px;
+        height: 425px;
         padding: 60px 26px;
         position: relative;
     }
@@ -1079,6 +1116,15 @@ a {
         width: 290px;
         height: 362px;
         transform: rotate(-45deg);
+    }
+
+    .regul-text-pre {
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    .regul-img {
+        width: 350px;
     }
 
     /* Cost  */
