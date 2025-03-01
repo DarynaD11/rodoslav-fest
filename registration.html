@@ -171,8 +171,7 @@
                         залюбки дамо відповідь :)
                     </p>
                 </div>
-                <form class="form-box" id="contact-form"
-                    action="https://formsubmit.co/darinadyadyuk11@gmail.com,lkozynko@uni-sport.edu.ua,daryna.v.diadiuk@uni-sport.edu.ua"
+                <form class="form-box" id="contact-form" action="https://formsubmit.co/darinadyadyuk11@gmail.com"
                     method="POST">
                     <div class="form-input">
                         <label for="user-name" class="form-label">Як до Вас звертатись?</label>
@@ -204,6 +203,8 @@
                         Надіслати
                     </button>
                     <input type="hidden" name="_captcha" value="false" class="visually-hidden" />
+                    <input type="hidden" name="_cc" value="lkozynko@uni-sport.edu.ua" />
+
                     <!-- Вимкнення капчі -->
                 </form>
             </div>
@@ -293,8 +294,12 @@
                 e.preventDefault(); // Запобігає перезавантаженню сторінки
 
                 var formData = new FormData(this);
-                var responseMessage =
-                    document.getElementById("response-message");
+                var responseMessage = document.getElementById("response-message");
+                var submitButton = this.querySelector('button[type="submit"]');
+
+                // Вимкнути кнопку після натискання
+                submitButton.disabled = true;
+                submitButton.textContent = "Відправка...";
 
                 fetch(this.action, {
                     method: "POST",
@@ -310,15 +315,30 @@
                             setTimeout(() => {
                                 responseMessage.style.opacity = "0"; // Плавне зникнення
                                 setTimeout(() => {
-                                    responseMessage.style.visibility =
-                                        "hidden"; // Повністю приховати
-                                }, 300); // Час має збігатися з transition
+                                    responseMessage.style.visibility = "hidden"; // Повністю приховати
+                                }, 300);
                             }, 10000);
+
+                            // Відновити кнопку
+                            setTimeout(() => {
+                                submitButton.disabled = false;
+                                submitButton.textContent = "Надіслати";
+                            }, 5000); // Розблокуємо через 5 сек (можна змінити)
                         } else {
                             alert("❌ Сталася помилка! Спробуйте ще раз.");
+
+                            // Відновити кнопку у разі помилки
+                            submitButton.disabled = false;
+                            submitButton.textContent = "Надіслати";
                         }
                     })
-                    .catch((error) => console.error("Помилка:", error));
+                    .catch((error) => {
+                        console.error("Помилка:", error);
+
+                        // Відновити кнопку у разі помилки
+                        submitButton.disabled = false;
+                        submitButton.textContent = "Надіслати";
+                    });
             });
     </script>
 </body>
