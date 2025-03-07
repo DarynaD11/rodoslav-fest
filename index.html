@@ -1,657 +1,841 @@
 <!DOCTYPE html>
 <html lang="ua">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="google-site-verification"
+            content="qmZO3_2lWLWSpAD7jChFCVxByfm6icGm5nIYMSJLWBM"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rodoslav Fest</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="google-site-verification" content="qmZO3_2lWLWSpAD7jChFCVxByfm6icGm5nIYMSJLWBM" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rodoslav Fest</title>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles.css" />
-</head>
-
-<body>
-    <header class="header-section">
-        <div class="container header-container">
-            <nav class="header-nav">
-                <a href="./index.html" class="logo header-logo-link">
-                    <svg class="logo-fest" width="80" height="80">
-                        <use href="./images/icons.svg#icon-logo"></use>
-                    </svg>
-                    <span class="logo-title">Rodoslav Fest</span>
-                </a>
-                <ul class="nav-header-link">
-                    <li class="nav-item">
-                        <a href="./index.html" class="nav-link current">Головна</a>
-                    </li>
-                    <li>
-                        <a href="./about.html" class="nav-link">Про фестиваль</a>
-                    </li>
-                    <li>
-                        <a href="./registration.html" class="nav-link">Зареєструватись</a>
-                    </li>
-                    <li>
-                        <a href="./contacts.html" class="nav-link">Контакти</a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/rodoslav_fest?igsh=eDVoMzVrNnhiNXI5" class="nav-link"><svg
-                                class="icon-inst" width="24" height="24">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg></a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="mobile-menu-btn" type="button" data-menu-open>
-                <svg class="icon-menu" width="24" height="24">
-                    <use href="./images/icons.svg#icon-menu"></use>
-                </svg>
-            </button>
-        </div>
-        <div class="mobile-menu" data-menu>
-            <div class="container mobile-menu-container">
-                <button class="mobile-menu-close" type="button" data-menu-close>
-                    <svg class="menu-btn-icon" width="8" height="8">
-                        <use href="./images/icons.svg#icon-cross"></use>
+    <body>
+        <header class="header-section">
+            <div class="container header-container">
+                <nav class="header-nav">
+                    <a href="./index.html" class="logo header-logo-link">
+                        <svg class="logo-fest" width="80" height="80">
+                            <use href="./images/icons.svg#icon-logo"></use>
+                        </svg>
+                        <span class="logo-title">Rodoslav Fest</span>
+                    </a>
+                    <ul class="nav-header-link">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link current"
+                                >Головна</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./about.html" class="nav-link"
+                                >Про фестиваль</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./registration.html" class="nav-link"
+                                >Зареєструватись</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./contacts.html" class="nav-link"
+                                >Контакти</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.instagram.com/rodoslav_fest?igsh=eDVoMzVrNnhiNXI5"
+                                class="nav-link"
+                                target="_blank"
+                                ><svg class="icon-inst" width="24" height="24">
+                                    <use
+                                        href="./images/icons.svg#icon-instagram"
+                                    ></use></svg
+                            ></a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn" type="button" data-menu-open>
+                    <svg class="icon-menu" width="24" height="24">
+                        <use href="./images/icons.svg#icon-menu"></use>
                     </svg>
                 </button>
-                <ul class="menu-nav-link">
-                    <li class="menu-nav-item">
-                        <a href="./index.html" class="menu-nav-link menu-current">Головна</a>
-                    </li>
-                    <li>
-                        <a href="./about.html" class="menu-nav-link">Про фестиваль</a>
-                    </li>
-                    <li>
-                        <a href="./registration.html" class="menu-nav-link">Зареєструватись</a>
-                    </li>
-                    <li>
-                        <a href="./contacts.html" class="menu-nav-link">Контакти</a>
-                    </li>
-                </ul>
-                <ul class="social-link">
-                    <li class="social-item">
-                        <a class="social-item-link"
-                            href="https://www.instagram.com/rodoslav_fest?igsh=eDVoMzVrNnhiNXI5">
-                            <svg class="card-social-icon" width="16" height="16">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a class="social-item-link" href="https://www.facebook.com/profile.php?id=100063856427446">
-                            <svg class="card-social-icon" width="16" height="16">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
             </div>
-        </div>
-    </header>
-    <main>
-        <section class="first-section">
-            <div class="container first-section-cont">
-                <h1 class="visually-hidden">Rodoslav Fest</h1>
-                <a class="hero-loro-link" href="https://uni-sport.edu.ua/">
-                    <img src="./images/desktop/nupesu.png" alt="nupesu-logo" class="hero-nupesu" width="65"
-                        height="75" />
-                    <p class="nupesu-logo-text">
-                        Національний університет фізичного виховання і
-                        спорту України
-                    </p>
-                </a>
-                <h1 class="first-section-title">
-                    Всеукраїнський фестиваль-конкурс хореографічного
-                    мистецтва
-                </h1>
-                <div class="hero-div">
-                    <a href="./registration.html">
-                        <button type="button" class="first-section-btn-reg">
-                            Зареєструватись
-                        </button>
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu-container">
+                    <button
+                        class="mobile-menu-close"
+                        type="button"
+                        data-menu-close
+                    >
+                        <svg class="menu-btn-icon" width="8" height="8">
+                            <use href="./images/icons.svg#icon-cross"></use>
+                        </svg>
+                    </button>
+                    <ul class="menu-nav-link">
+                        <li class="menu-nav-item">
+                            <a
+                                href="./index.html"
+                                class="menu-nav-link menu-current"
+                                >Головна</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./about.html" class="menu-nav-link"
+                                >Про фестиваль</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./registration.html" class="menu-nav-link"
+                                >Зареєструватись</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./contacts.html" class="menu-nav-link"
+                                >Контакти</a
+                            >
+                        </li>
+                    </ul>
+                    <ul class="social-link">
+                        <li class="social-item">
+                            <a
+                                class="social-item-link"
+                                href="https://www.instagram.com/rodoslav_fest?igsh=eDVoMzVrNnhiNXI5"
+                                target="_blank"
+                            >
+                                <svg
+                                    class="card-social-icon"
+                                    width="16"
+                                    height="16"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-instagram"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a
+                                class="social-item-link"
+                                href="https://www.facebook.com/profile.php?id=100063856427446"
+                                target="_blank"
+                            >
+                                <svg
+                                    class="card-social-icon"
+                                    width="16"
+                                    height="16"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-facebook"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="first-section">
+                <div class="container first-section-cont">
+                    <h1 class="visually-hidden">Rodoslav Fest</h1>
+                    <a
+                        class="hero-loro-link"
+                        href="https://uni-sport.edu.ua/"
+                        target="_blank"
+                    >
+                        <img
+                            src="./images/desktop/nupesu.png"
+                            alt="nupesu-logo"
+                            class="hero-nupesu"
+                            width="65"
+                            height="75"
+                        />
+                        <p class="nupesu-logo-text">
+                            Національний університет фізичного виховання і
+                            спорту України
+                        </p>
                     </a>
-                    <a href="./about.html" class="first-section-btn-ab">Про фестиваль</a>
-                    <p class="hero-data">26 квітня <br>2025 року</p>
-                </div>
-            </div>
-        </section>
-        <section class="regulations container">
-            <h2 class="regul-title">ПОЛОЖЕНННЯ</h2>
-            <p class="regul-text">
-                З положенням про фестиваль-конкурс можна ознайомитись
-                <a class="regul-decor"
-                    href="https://docs.google.com/document/d/1_jZCWzwwbVJKPlStCzSoUAYhf4b438l5CCI-waRrmYM/edit?usp=sharing">тут</a>
-            </p>
-            <svg weight="214" height="266">
-                <use href="./images/icons.svg#icon-regul"></use>
-            </svg>
-        </section>
-        <section class="section-two">
-            <div class="container">
-                <ul class="second-section">
-                    <li class="second-list">
-                        <div class="div-cont">
-                            <div class="box-icon">
-                                <svg class="icon" width="32" height="32">
-                                    <use href="./images/icons.svg#icon-group"></use>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="second-title">
-                                    Категорії Фестивалю-конкурсу:
-                                </h3>
-                                <ul class="second-text">
-                                    <li>Соло;</li>
-                                    <li>Дует;</li>
-                                    <li>Мала група (до 8 учасників);</li>
-                                    <li>
-                                        Велика група (від 8 до 16
-                                        учасників).
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <hr class="my-line" />
-                    </li>
-                    <li class="second-list">
-                        <div class="div-cont">
-                            <div class="box-icon">
-                                <svg class="icon" width="32" height="32">
-                                    <use href="./images/icons.svg#icon-add"></use>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="second-title">
-                                    Вікові категорії Фестивалю-конкурсу:
-                                </h3>
-                                <ul class="second-text">
-                                    <li>
-                                        Дебют (для категорії малюки та
-                                        діти);
-                                    </li>
-                                    <li>Малюки до 8 років;</li>
-                                    <li>Діти від 8 до 12 років;</li>
-                                    <li>Юніори 12-15 років;</li>
-                                    <li>Молодь від 15 до 18 років;</li>
-                                    <li>Дорослі від 18 до 22 років.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <hr class="my-line" />
-                    </li>
-                    <li class="second-list">
-                        <div class="div-cont">
-                            <div class="box-icon">
-                                <svg class="icon" width="32" height="32">
-                                    <use href="./images/icons.svg#icon-music"></use>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="second-title">
-                                    Тривалість хореографічного номеру:
-                                </h3>
-                                <ul class="second-text">
-                                    <li>
-                                        Дует – тривалість максимум до 2.30
-                                        хвилин;
-                                    </li>
-                                    <li>
-                                        Мала група – тривалість максимум до
-                                        3.30 хвилин;
-                                    </li>
-                                    <li>
-                                        Велика група – тривалість максимум
-                                        до 5 хвилин.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="dance-style">
-            <div class="container">
-                <h2 class="portfolio">
-                    Фестиваль-конкурс проводиться за наступними
-                    <span class="fest-nom">номінаціями</span>
-                </h2>
-                <ul class="portfolio-container">
-                    <li>
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="./images/mobile/folk-mob.jpg" alt="Folk dance" width="270" height="270" />
-                                    <p class="card-text">
-                                        Народна хореографія
-                                    </p>
-                                </div>
-                                <div class="flip-card-back">
-                                    <div class="overlay-content">
-                                        <span class="title-overlay">Народна хореографія</span>
-                                        <p class="text-overlay">
-                                            Український народний та
-                                            народно-сценічний танець,
-                                            народний та народно-сценічний
-                                            танець інших національностей,
-                                            стилізація народного танцю.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="./images/mobile/clasik-dance-mob.jpg" alt="Clasyk dance" width="270"
-                                        height="270" />
-                                    <p class="card-text">
-                                        Класична хореографія
-                                    </p>
-                                </div>
-                                <div class="flip-card-back">
-                                    <div class="overlay-content">
-                                        <span class="title-overlay">Класична хореографія</span>
-                                        <p class="text-overlay">
-                                            Фрагменти та варіації з
-                                            класичних балетів, постановки на
-                                            основі елементів класичного
-                                            танцю.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="./images/mobile/modern-mob.jpg" alt="Modern dance" width="270"
-                                        height="270" />
-                                    <p class="card-text">
-                                        Сучасна хореографія
-                                    </p>
-                                </div>
-                                <div class="flip-card-back">
-                                    <div class="overlay-content">
-                                        <span class="title-overlay">Сучасна хореографія</span>
-                                        <p class="text-overlay">
-                                            Джаз, модерн, contemporary,
-                                            фольк-модерн, фольк-джаз,
-                                            шоу-постановки та ін.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="./images/mobile/street-mob.jpg" alt="Street dance" width="270"
-                                        height="270" />
-                                    <p class="card-text">Вуличні стилі</p>
-                                </div>
-                                <div class="flip-card-back">
-                                    <div class="overlay-content">
-                                        <span class="title-overlay">Вуличні стилі</span>
-                                        <p class="text-overlay">
-                                            Hip-hop, house, breaking,
-                                            locking, vogue, dancehall тощо.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="criteria">
-            <div class="container">
-                <h3 class="crt-title">
-                    Критерії <span>оцінювання</span> виконавців
-                </h3>
-                <div class="crt-desk">
-                    <div class="crt-img">
-                        <picture>
-                            <source media="(min-width: 1158px)" srcset="./images/desktop/criteria-desk.jpg" />
-                            <source media="(min-width: 768px)" srcset="./images/tablet/criteria-tab.jpg" />
-                            <source media="(max-width: 767px)" srcset="./images/mobile/criteria-mob.jpg" />
-                            <img src="./images/mobile/criteria-mob.jpg" alt="Ballet" />
-                        </picture>
-                    </div>
-                    <div class="crt-inf">
-                        <h4 class="crt-info-title">
-                            Кожна хореографічна постановка оцінюється за
-                            такими критеріями у 10-бальній шкалі:
-                        </h4>
-                        <ul class="crt-info-list">
-                            <li class="crt-info-text item1">
-                                Композиційне вирішення постановки
-                                (хореографічна драматургія, сюжет номеру);
-                            </li>
-                            <li class="crt-info-text item2">
-                                Музичний супровід (відповідність музичного
-                                супроводу задуму постановки та віку дітей);
-                            </li>
-                            <li class="crt-info-text item3">
-                                Художньо-виконавський рівень (техніка та
-                                чистота виконання, чіткість хореографічних
-                                малюнків, динаміка виконання);
-                            </li>
-                            <li class="crt-info-text item4">
-                                Музикальність виконання (ритмічність,
-                                музикальність, музичні акценти, обігравання
-                                музики);
-                            </li>
-                            <li class="crt-info-text item5">
-                                Акторська виразність (виразність,
-                                емоційність, атмосфера танцю);
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="judge">
-            <h5 class="judge-title">ЖУРІ</h5>
-            <div class="pag-container">
-                <ul class="judge-container">
-                    <li class="judge-card">
-                        <div class="judge-card-over">
-                            <div class="judge-card-overlay">
-                                <div class="judge-card-img">
-                                    <img src="./images/mobile/shkorinenko.jpg" alt="Judge-Valeryi" width="360"
-                                        height="300" />
-                                </div>
-                                <div class="judge-card-two">
-                                    <h3 class="judge-card-title">
-                                        ШКОРІНЕНКО<br />Валерій
-                                    </h3>
-                                    <p class="judge-card-text">
-                                        Голова журі
-                                    </p>
-                                </div>
-                            </div>
-                            <ul class="over-text">
-                                <li>Заслужений діяч мистецтв України;</li>
-                                <li>Кандидат мистецтвознавства;</li>
-                                <li>Доцент;</li>
-                                <li>
-                                    Головний балетмейстер Національного
-                                    заслуженого академічного народного хору
-                                    України імені Григорія Верьовки;
-                                </li>
-                                <li>
-                                    Викладач народно-сценічного танцю Студії
-                                    по підготовці акторських кадрів при
-                                    Національному заслуженому академічному
-                                    ансамблі танцю України імені Павла
-                                    Вірського;
-                                </li>
-                                <li>
-                                    Член правліня Національної
-                                    хореографічної спілки України.
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="judge-card second">
-                        <div class="judge-card-over">
-                            <svg class="icon-judge-flow" width="336" height="420">
-                                <use href="./images/icons.svg#icon-judje-fl"></use>
-                            </svg>
-                        </div>
-                    </li>
-                    <li class="judge-card">
-                        <div class="judge-card-over">
-                            <div class="judge-card-overlay">
-                                <div class="judge-card-img">
-                                    <img src="./images/mobile/lilia-mob.jpg" alt="Judge-Liliia" width="360"
-                                        height="300" />
-                                </div>
-                                <div class="judge-card-two">
-                                    <h3 class="judge-card-title">
-                                        КОЗИНКО<br />Лілія
-                                    </h3>
-                                    <p class="judge-card-text">Член журі</p>
-                                </div>
-                            </div>
-                            <ul class="over-text">
-                                <li>Кандидат мистецтвознавства;</li>
-                                <li>Доцент;</li>
-                                <li>
-                                    Доцент кафедри хореографії і
-                                    танцювальних видів спорту Національного
-                                    університету фізичного виховання і
-                                    спорту України;
-                                </li>
-                                <li>
-                                    Член Національної хореографічної спілки
-                                    України;
-                                </li>
-                                <li>
-                                    Викладач народно-сценічного танцю у
-                                    Дитячій хореографічній школі при
-                                    Національному заслуженому академічному
-                                    ансамблі танцю України імені Павла
-                                    Вірського (2010-2014).
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="judge-card">
-                        <div class="judge-card-over">
-                            <div class="judge-card-overlay">
-                                <div class="judge-card-img">
-                                    <img src="./images/mobile/perova-mob.jpg" alt="Judge-Hanna" width="360"
-                                        height="300" />
-                                </div>
-                                <div class="judge-card-two">
-                                    <h3 class="judge-card-title">
-                                        ПЕРОВА<br />Ганна
-                                    </h3>
-                                    <p class="judge-card-text">Член журі</p>
-                                </div>
-                            </div>
-                            <ul class="over-text">
-                                <li>Заслужена артистка України;</li>
-                                <li>Доцент;</li>
-                                <li>
-                                    Доцент кафедри хореографії і
-                                    танцювальних видів спорту Національного
-                                    університету фізичного виховання і
-                                    спорту України;
-                                </li>
-                                <li>
-                                    Доцент факультету хореографічного
-                                    мистецтва КНУКіМ;
-                                </li>
-                                <li>
-                                    Солістка Театру сучасної хореографії
-                                    Сузір'я-Аніко («Аніко-балет»).
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="judge-card">
-                        <div class="judge-card-over">
-                            <div class="judge-card-overlay">
-                                <div class="judge-card-img">
-                                    <img src="./images/mobile/baird-mob.jpg" alt="Judge-Anastasia" width="360"
-                                        height="300" />
-                                </div>
-                                <div class="judge-card-two">
-                                    <h3 class="judge-card-title">
-                                        БАІРД<br />Анастасія
-                                    </h3>
-                                    <p class="judge-card-text">Член журі</p>
-                                </div>
-                            </div>
-                            <ul class="over-text text-change">
-                                <li>
-                                    Провідна солістка театру Київ модерн
-                                    балет;
-                                </li>
-                                <li>
-                                    Асистент хореографа Раду Поклітару в
-                                    Латвії, м.Рига балет «Вій» (2023);
-                                </li>
-                                <li>
-                                    Викладач історії балету Студії по
-                                    підготовці акторських кадрів при
-                                    Національному заслуженому академічному
-                                    ансамблі танцю України імені Павла
-                                    Вірського;
-                                </li>
-                                <li>
-                                    Солістка балету Національного
-                                    заслуженого академічного ансамблю танцю
-                                    України імені Павла Вірського
-                                    (2010-2016);
-                                </li>
-                                <li>
-                                    Запрошена артистка у складі Hamburg
-                                    ballet в Німеччині, місто Баден-Баден.
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="judge-card">
-                        <div class="judge-card-over">
-                            <div class="judge-card-overlay">
-                                <div class="judge-card-img">
-                                    <img src="./images/mobile/zmiiok@1.jpg" alt="Judge-Sergii" width="360"
-                                        height="300" />
-                                </div>
-                                <div class="judge-card-two">
-                                    <h3 class="judge-card-title">
-                                        ЗМІЙОК<br />Сергій
-                                    </h3>
-                                    <p class="judge-card-text">Член журі</p>
-                                </div>
-                            </div>
-                            <ul class="over-text text-change">
-                                <li>
-                                    Супер-Фіналіст проєкту «Танцюють всі»;
-                                </li>
-                                <li>
-                                    Хореограф-постановник таких проектів як
-                                    «Танцюють всі», «Україна має талант»,
-                                    «Танці з зірками»;
-                                </li>
-                                <li>
-                                    Керівник проєкту“Revolvers Dance Show”.
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-                <div class="pagination">
-                    <div class="dot-container">
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
-                    <!-- Індикатор, який буде "злиттям" двох крапок -->
-                    <div class="indicator"></div>
-                </div>
-            </div>
-            <a href="./registration.html" class="judge-btn">Зареєструватись</a>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-logo">
-                <a href="./index.html" class="logo header-logo-link">
-                    <svg class="footer-logo-fest" width="80" height="80">
-                        <use href="./images/icons.svg#icon-logo"></use>
-                    </svg>
-                    <span class="footer-logo-title">Rodoslav Fest</span>
-                </a>
-            </div>
-            <div class="footer-nupesu">
-                <a class="footer-loro-link" href="https://uni-sport.edu.ua/">
-                    <img src="./images/desktop/nupesu.png" alt="nupesu-logo" class="footer-nupesu-logo" width="65"
-                        height="75" />
-                    <p class="footer-nupesu-logo-text">
-                        Національний університет фізичного виховання і
-                        спорту України
-                    </p>
-                </a>
-            </div>
-            <div class="footer-nav">
-                <ul class="footer-nav-header-link">
-                    <li class="footer-nav-item">
-                        <a href="./index.html" class="footer-nav-link">Головна</a>
-                    </li>
-                    <li class="footer-nav-item">
-                        <a href="./about.html" class="footer-nav-link">Про фестиваль</a>
-                    </li>
-                    <li class="footer-nav-item">
-                        <a href="./registration.html" class="footer-nav-link">Зареєструватись</a>
-                    </li>
-                    <li class="footer-nav-item">
-                        <a href="./contacts.html" class="footer-nav-link">Контакти</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <ul class="social-link">
-                    <li class="social-item">
-                        <a class="footer-social-item-link"
-                            href="https://www.instagram.com/rodoslav_fest?igsh=eDVoMzVrNnhiNXI5">
-                            <svg class="footer-card-social-icon" width="16" height="16">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
+                    <h1 class="first-section-title">
+                        Всеукраїнський фестиваль-конкурс хореографічного
+                        мистецтва
+                    </h1>
+                    <div class="hero-div">
+                        <a href="./registration.html">
+                            <button type="button" class="first-section-btn-reg">
+                                Зареєструватись
+                            </button>
                         </a>
-                    </li>
-                    <li class="social-item">
-                        <a class="footer-social-item-link"
-                            href="https://www.facebook.com/profile.php?id=100063856427446">
-                            <svg class="footer-card-social-icon" width="16" height="16">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                        <a href="./about.html" class="first-section-btn-ab"
+                            >Про фестиваль</a
+                        >
+                        <p class="hero-data">26 квітня <br />2025 року</p>
+                    </div>
+                </div>
+            </section>
+            <section class="regulations container">
+                <h2 class="regul-title">ПОЛОЖЕНННЯ</h2>
+                <p class="regul-text">
+                    З положенням про фестиваль-конкурс можна ознайомитись
+                    <a
+                        class="regul-decor"
+                        href="https://docs.google.com/document/d/1_jZCWzwwbVJKPlStCzSoUAYhf4b438l5CCI-waRrmYM/edit?usp=sharing"
+                        target="_blank"
+                        >тут</a
+                    >
+                </p>
+                <svg weight="214" height="266">
+                    <use href="./images/icons.svg#icon-regul"></use>
+                </svg>
+            </section>
+            <section class="section-two">
+                <div class="container">
+                    <ul class="second-section">
+                        <li class="second-list">
+                            <div class="div-cont">
+                                <div class="box-icon">
+                                    <svg class="icon" width="32" height="32">
+                                        <use
+                                            href="./images/icons.svg#icon-group"
+                                        ></use>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="second-title">
+                                        Категорії Фестивалю-конкурсу:
+                                    </h3>
+                                    <ul class="second-text">
+                                        <li>Соло;</li>
+                                        <li>Дует;</li>
+                                        <li>Мала група (до 8 учасників);</li>
+                                        <li>
+                                            Велика група (від 8 до 16
+                                            учасників).
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr class="my-line" />
+                        </li>
+                        <li class="second-list">
+                            <div class="div-cont">
+                                <div class="box-icon">
+                                    <svg class="icon" width="32" height="32">
+                                        <use
+                                            href="./images/icons.svg#icon-add"
+                                        ></use>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="second-title">
+                                        Вікові категорії Фестивалю-конкурсу:
+                                    </h3>
+                                    <ul class="second-text">
+                                        <li>
+                                            Дебют (для категорії малюки та
+                                            діти);
+                                        </li>
+                                        <li>Малюки до 8 років;</li>
+                                        <li>Діти від 8 до 12 років;</li>
+                                        <li>Юніори 12-15 років;</li>
+                                        <li>Молодь від 15 до 18 років;</li>
+                                        <li>Дорослі від 18 до 22 років.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr class="my-line" />
+                        </li>
+                        <li class="second-list">
+                            <div class="div-cont">
+                                <div class="box-icon">
+                                    <svg class="icon" width="32" height="32">
+                                        <use
+                                            href="./images/icons.svg#icon-music"
+                                        ></use>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="second-title">
+                                        Тривалість хореографічного номеру:
+                                    </h3>
+                                    <ul class="second-text">
+                                        <li>
+                                            Дует – тривалість максимум до 2.30
+                                            хвилин;
+                                        </li>
+                                        <li>
+                                            Мала група – тривалість максимум до
+                                            3.30 хвилин;
+                                        </li>
+                                        <li>
+                                            Велика група – тривалість максимум
+                                            до 5 хвилин.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="dance-style">
+                <div class="container">
+                    <h2 class="portfolio">
+                        Фестиваль-конкурс проводиться за наступними
+                        <span class="fest-nom">номінаціями</span>
+                    </h2>
+                    <ul class="portfolio-container">
+                        <li>
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img
+                                            src="./images/mobile/folk-mob.jpg"
+                                            alt="Folk dance"
+                                            width="270"
+                                            height="270"
+                                        />
+                                        <p class="card-text">
+                                            Народна хореографія
+                                        </p>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <div class="overlay-content">
+                                            <span class="title-overlay"
+                                                >Народна хореографія</span
+                                            >
+                                            <p class="text-overlay">
+                                                Український народний та
+                                                народно-сценічний танець,
+                                                народний та народно-сценічний
+                                                танець інших національностей,
+                                                стилізація народного танцю.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img
+                                            src="./images/mobile/clasik-dance-mob.jpg"
+                                            alt="Clasyk dance"
+                                            width="270"
+                                            height="270"
+                                        />
+                                        <p class="card-text">
+                                            Класична хореографія
+                                        </p>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <div class="overlay-content">
+                                            <span class="title-overlay"
+                                                >Класична хореографія</span
+                                            >
+                                            <p class="text-overlay">
+                                                Фрагменти та варіації з
+                                                класичних балетів, постановки на
+                                                основі елементів класичного
+                                                танцю.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img
+                                            src="./images/mobile/modern-mob.jpg"
+                                            alt="Modern dance"
+                                            width="270"
+                                            height="270"
+                                        />
+                                        <p class="card-text">
+                                            Сучасна хореографія
+                                        </p>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <div class="overlay-content">
+                                            <span class="title-overlay"
+                                                >Сучасна хореографія</span
+                                            >
+                                            <p class="text-overlay">
+                                                Джаз, модерн, contemporary,
+                                                фольк-модерн, фольк-джаз,
+                                                шоу-постановки та ін.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img
+                                            src="./images/mobile/street-mob.jpg"
+                                            alt="Street dance"
+                                            width="270"
+                                            height="270"
+                                        />
+                                        <p class="card-text">Вуличні стилі</p>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <div class="overlay-content">
+                                            <span class="title-overlay"
+                                                >Вуличні стилі</span
+                                            >
+                                            <p class="text-overlay">
+                                                Hip-hop, house, breaking,
+                                                locking, vogue, dancehall тощо.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="criteria">
+                <div class="container">
+                    <h3 class="crt-title">
+                        Критерії <span>оцінювання</span> виконавців
+                    </h3>
+                    <div class="crt-desk">
+                        <div class="crt-img">
+                            <picture>
+                                <source
+                                    media="(min-width: 1158px)"
+                                    srcset="./images/desktop/criteria-desk.jpg"
+                                />
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="./images/tablet/criteria-tab.jpg"
+                                />
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="./images/mobile/criteria-mob.jpg"
+                                />
+                                <img
+                                    src="./images/mobile/criteria-mob.jpg"
+                                    alt="Ballet"
+                                />
+                            </picture>
+                        </div>
+                        <div class="crt-inf">
+                            <h4 class="crt-info-title">
+                                Кожна хореографічна постановка оцінюється за
+                                такими критеріями у 10-бальній шкалі:
+                            </h4>
+                            <ul class="crt-info-list">
+                                <li class="crt-info-text item1">
+                                    Композиційне вирішення постановки
+                                    (хореографічна драматургія, сюжет номеру);
+                                </li>
+                                <li class="crt-info-text item2">
+                                    Музичний супровід (відповідність музичного
+                                    супроводу задуму постановки та віку дітей);
+                                </li>
+                                <li class="crt-info-text item3">
+                                    Художньо-виконавський рівень (техніка та
+                                    чистота виконання, чіткість хореографічних
+                                    малюнків, динаміка виконання);
+                                </li>
+                                <li class="crt-info-text item4">
+                                    Музикальність виконання (ритмічність,
+                                    музикальність, музичні акценти, обігравання
+                                    музики);
+                                </li>
+                                <li class="crt-info-text item5">
+                                    Акторська виразність (виразність,
+                                    емоційність, атмосфера танцю);
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="judge">
+                <h5 class="judge-title">ЖУРІ</h5>
+                <div class="pag-container">
+                    <ul class="judge-container">
+                        <li class="judge-card">
+                            <div class="judge-card-over">
+                                <div class="judge-card-overlay">
+                                    <div class="judge-card-img">
+                                        <img
+                                            src="./images/mobile/shkorinenko.jpg"
+                                            alt="Judge-Valeryi"
+                                            width="360"
+                                            height="300"
+                                        />
+                                    </div>
+                                    <div class="judge-card-two">
+                                        <h3 class="judge-card-title">
+                                            ШКОРІНЕНКО<br />Валерій
+                                        </h3>
+                                        <p class="judge-card-text">
+                                            Голова журі
+                                        </p>
+                                    </div>
+                                </div>
+                                <ul class="over-text">
+                                    <li>Заслужений діяч мистецтв України;</li>
+                                    <li>Кандидат мистецтвознавства;</li>
+                                    <li>Доцент;</li>
+                                    <li>
+                                        Головний балетмейстер Національного
+                                        заслуженого академічного народного хору
+                                        України імені Григорія Верьовки;
+                                    </li>
+                                    <li>
+                                        Викладач народно-сценічного танцю Студії
+                                        по підготовці акторських кадрів при
+                                        Національному заслуженому академічному
+                                        ансамблі танцю України імені Павла
+                                        Вірського;
+                                    </li>
+                                    <li>
+                                        Член правліня Національної
+                                        хореографічної спілки України.
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="judge-card second">
+                            <div class="judge-card-over">
+                                <svg
+                                    class="icon-judge-flow"
+                                    width="336"
+                                    height="420"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-judje-fl"
+                                    ></use>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="judge-card">
+                            <div class="judge-card-over">
+                                <div class="judge-card-overlay">
+                                    <div class="judge-card-img">
+                                        <img
+                                            src="./images/mobile/lilia-mob.jpg"
+                                            alt="Judge-Liliia"
+                                            width="360"
+                                            height="300"
+                                        />
+                                    </div>
+                                    <div class="judge-card-two">
+                                        <h3 class="judge-card-title">
+                                            КОЗИНКО<br />Лілія
+                                        </h3>
+                                        <p class="judge-card-text">Член журі</p>
+                                    </div>
+                                </div>
+                                <ul class="over-text">
+                                    <li>Кандидат мистецтвознавства;</li>
+                                    <li>Доцент;</li>
+                                    <li>
+                                        Доцент кафедри хореографії і
+                                        танцювальних видів спорту Національного
+                                        університету фізичного виховання і
+                                        спорту України;
+                                    </li>
+                                    <li>
+                                        Член Національної хореографічної спілки
+                                        України;
+                                    </li>
+                                    <li>
+                                        Викладач народно-сценічного танцю у
+                                        Дитячій хореографічній школі при
+                                        Національному заслуженому академічному
+                                        ансамблі танцю України імені Павла
+                                        Вірського (2010-2014).
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="judge-card">
+                            <div class="judge-card-over">
+                                <div class="judge-card-overlay">
+                                    <div class="judge-card-img">
+                                        <img
+                                            src="./images/mobile/perova-mob.jpg"
+                                            alt="Judge-Hanna"
+                                            width="360"
+                                            height="300"
+                                        />
+                                    </div>
+                                    <div class="judge-card-two">
+                                        <h3 class="judge-card-title">
+                                            ПЕРОВА<br />Ганна
+                                        </h3>
+                                        <p class="judge-card-text">Член журі</p>
+                                    </div>
+                                </div>
+                                <ul class="over-text">
+                                    <li>Заслужена артистка України;</li>
+                                    <li>Доцент;</li>
+                                    <li>
+                                        Доцент кафедри хореографії і
+                                        танцювальних видів спорту Національного
+                                        університету фізичного виховання і
+                                        спорту України;
+                                    </li>
+                                    <li>
+                                        Доцент факультету хореографічного
+                                        мистецтва КНУКіМ;
+                                    </li>
+                                    <li>
+                                        Солістка Театру сучасної хореографії
+                                        Сузір'я-Аніко («Аніко-балет»).
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="judge-card">
+                            <div class="judge-card-over">
+                                <div class="judge-card-overlay">
+                                    <div class="judge-card-img">
+                                        <img
+                                            src="./images/mobile/baird-mob.jpg"
+                                            alt="Judge-Anastasia"
+                                            width="360"
+                                            height="300"
+                                        />
+                                    </div>
+                                    <div class="judge-card-two">
+                                        <h3 class="judge-card-title">
+                                            БАІРД<br />Анастасія
+                                        </h3>
+                                        <p class="judge-card-text">Член журі</p>
+                                    </div>
+                                </div>
+                                <ul class="over-text text-change">
+                                    <li>
+                                        Провідна солістка театру Київ модерн
+                                        балет;
+                                    </li>
+                                    <li>
+                                        Асистент хореографа Раду Поклітару в
+                                        Латвії, м.Рига балет «Вій» (2023);
+                                    </li>
+                                    <li>
+                                        Викладач історії балету Студії по
+                                        підготовці акторських кадрів при
+                                        Національному заслуженому академічному
+                                        ансамблі танцю України імені Павла
+                                        Вірського;
+                                    </li>
+                                    <li>
+                                        Солістка балету Національного
+                                        заслуженого академічного ансамблю танцю
+                                        України імені Павла Вірського
+                                        (2010-2016);
+                                    </li>
+                                    <li>
+                                        Запрошена артистка у складі Hamburg
+                                        ballet в Німеччині, місто Баден-Баден.
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="judge-card">
+                            <div class="judge-card-over">
+                                <div class="judge-card-overlay">
+                                    <div class="judge-card-img">
+                                        <img
+                                            src="./images/mobile/zmiiok@1.jpg"
+                                            alt="Judge-Sergii"
+                                            width="360"
+                                            height="300"
+                                        />
+                                    </div>
+                                    <div class="judge-card-two">
+                                        <h3 class="judge-card-title">
+                                            ЗМІЙОК<br />Сергій
+                                        </h3>
+                                        <p class="judge-card-text">Член журі</p>
+                                    </div>
+                                </div>
+                                <ul class="over-text text-change">
+                                    <li>
+                                        Супер-Фіналіст проєкту «Танцюють всі»;
+                                    </li>
+                                    <li>
+                                        Хореограф-постановник таких проектів як
+                                        «Танцюють всі», «Україна має талант»,
+                                        «Танці з зірками»;
+                                    </li>
+                                    <li>
+                                        Керівник проєкту“Revolvers Dance Show”.
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="pagination">
+                        <div class="dot-container">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <!-- Індикатор, який буде "злиттям" двох крапок -->
+                        <div class="indicator"></div>
+                    </div>
+                </div>
+                <a href="./registration.html" class="judge-btn"
+                    >Зареєструватись</a
+                >
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-logo">
+                    <a href="./index.html" class="logo header-logo-link">
+                        <svg class="footer-logo-fest" width="80" height="80">
+                            <use href="./images/icons.svg#icon-logo"></use>
+                        </svg>
+                        <span class="footer-logo-title">Rodoslav Fest</span>
+                    </a>
+                </div>
+                <div class="footer-nupesu">
+                    <a
+                        class="footer-loro-link"
+                        href="https://uni-sport.edu.ua/"
+                        target="_blank"
+                    >
+                        <img
+                            src="./images/desktop/nupesu.png"
+                            alt="nupesu-logo"
+                            class="footer-nupesu-logo"
+                            width="65"
+                            height="75"
+                        />
+                        <p class="footer-nupesu-logo-text">
+                            Національний університет фізичного виховання і
+                            спорту України
+                        </p>
+                    </a>
+                </div>
+                <div class="footer-nav">
+                    <ul class="footer-nav-header-link">
+                        <li class="footer-nav-item">
+                            <a href="./index.html" class="footer-nav-link"
+                                >Головна</a
+                            >
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="./about.html" class="footer-nav-link"
+                                >Про фестиваль</a
+                            >
+                        </li>
+                        <li class="footer-nav-item">
+                            <a
+                                href="./registration.html"
+                                class="footer-nav-link"
+                                >Зареєструватись</a
+                            >
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="./contacts.html" class="footer-nav-link"
+                                >Контакти</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <ul class="social-link">
+                        <li class="social-item">
+                            <a
+                                class="footer-social-item-link"
+                                href="https://www.instagram.com/rodoslav_fest?igsh=eDVoMzVrNnhiNXI5"
+                                target="_blank"
+                            >
+                                <svg
+                                    class="footer-card-social-icon"
+                                    width="16"
+                                    height="16"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-instagram"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a
+                                class="footer-social-item-link"
+                                href="https://www.facebook.com/profile.php?id=100063856427446"
+                                target="_blank"
+                            >
+                                <svg
+                                    class="footer-card-social-icon"
+                                    width="16"
+                                    height="16"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-facebook"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-cont">
+                    <p class="footer-cont-text">Контакти</p>
+                    <ul class="nav-address">
+                        <li>
+                            <a
+                                href="mailto:lkozynko@uni-sport.edu.ua"
+                                class="f-address-link"
+                                >lkozynko@uni-sport.edu.ua</a
+                            >
+                        </li>
+                        <li>
+                            <a href="tel:+380973278637," class="f-address-link"
+                                >+38 (097) 327-86-37</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="mailto:daryna.v.diadiuk@uni-sport.edu.ua"
+                                class="f-address-link"
+                                >daryna.v.diadiuk@uni-sport.edu.ua</a
+                            >
+                        </li>
+                        <li>
+                            <a href="tel:+380662563301" class="f-address-link"
+                                >+38 (066) 256-33-01</a
+                            >
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-cont">
-                <p class="footer-cont-text">Контакти</p>
-                <ul class="nav-address">
-                    <li>
-                        <a href="mailto:lkozynko@uni-sport.edu.ua" class="f-address-link">lkozynko@uni-sport.edu.ua</a>
-                    </li>
-                    <li>
-                        <a href="tel:+380973278637," class="f-address-link">+38 (097) 327-86-37</a>
-                    </li>
-                    <li>
-                        <a href="mailto:daryna.v.diadiuk@uni-sport.edu.ua"
-                            class="f-address-link">daryna.v.diadiuk@uni-sport.edu.ua</a>
-                    </li>
-                    <li>
-                        <a href="tel:+380662563301" class="f-address-link">+38 (066) 256-33-01</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <script src="./js/menu.js"></script>
-    <script src="./js/card.js"></script>
-    <script src="./js/pagination.js"></script>
-</body>
-
+        </footer>
+        <script src="./js/menu.js"></script>
+        <script src="./js/card.js"></script>
+        <script src="./js/pagination.js"></script>
+    </body>
 </html>
